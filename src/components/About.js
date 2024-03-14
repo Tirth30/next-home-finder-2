@@ -20,15 +20,16 @@ const About = () => {
                         <div className="col-lg-6">
                             <div className="about-item">
                                 <div className="title">
-                                    Lorem ipsum dolor sit amet
+                                   Next Home Finder 
                             </div>
                                 <div className="about-text">
-                                    Lorem ipsum is simply free text dolor sit am adipi we help you ensure everyone is in the right jobs sicing elit, sed do consulting firms Et leggings across the nation tempor.
+                                   Next Home Finder : An Innovative New Search Experience
+
                             </div>
                                 <div className="about-features">
-                                    <p className="about-feature"><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p>
-                                    <p className="about-feature" ><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p>
-                                    <p className="about-feature"><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p>
+                                    <p className="about-feature"><i className="fas fa-long-arrow-alt-right"></i> Find Home by sitting at Home </p>
+                                    {/* <p className="about-feature" ><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p>
+                                    <p className="about-feature"><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p> */}
 
                                 </div>
                             </div>

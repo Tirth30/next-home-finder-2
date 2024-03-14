@@ -11,7 +11,7 @@ const Header = () => {
                             <div className="d-flex align-items-center">
                             <i className="fas fa-home"></i>
                                 <span className="ms-2">
-                                    MB
+                                    Next Home Finder
                            </span>
                             </div>
                         </Link>
@@ -23,20 +23,20 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/">Home</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link  className="nav-link" to="/blog">Blog</Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link  className="nav-link" to="/about">About</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link className="nav-link" to="#">Category <i className="fas fa-chevron-down"></i></Link>
                                     <ul className="sub-ul">
                                         <li><Link to="#">item</Link></li>
                                         <li><Link to="#">item</Link></li>
                                         <li><Link to="#">item</Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/contact">Contact</Link>
                                 </li>
