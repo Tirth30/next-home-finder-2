@@ -24,22 +24,23 @@ const Header = () => {
                                     <Link className="nav-link" to="/">Home</Link>
                                 </li>
                                 {/* <li className="nav-item">
-                                    <Link  className="nav-link" to="/blog">Blog</Link>
+                                    <Link  className="nav-link" to="/blog">Contacts</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/contact">Shortlisted</Link>
                                 </li> */}
                                 <li className="nav-item">
                                     <Link  className="nav-link" to="/about">About</Link>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <Link className="nav-link" to="#">Category <i className="fas fa-chevron-down"></i></Link>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="#"> Category <i className="fas fa-chevron-down"></i></Link>
                                     <ul className="sub-ul">
                                         <li><Link to="#">item</Link></li>
                                         <li><Link to="#">item</Link></li>
                                         <li><Link to="#">item</Link></li>
                                     </ul>
-                                </li> */}
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/contact">Contact</Link>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>
