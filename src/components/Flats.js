@@ -2,7 +2,7 @@ function Flats ()  {
     return (
         <div>
             <h1>
-                PG HERE;
+                Flat HERE;
             </h1>
         </div>
     );
