@@ -3,7 +3,6 @@ import Banner from "./Banner"
 import React from "react"
 import ProductCard from "./ProductCard"
 
-
 const Home=()=>{
     return (
         <React.Fragment>

@@ -800,6 +800,7 @@ section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width:100%;
 }
 
 .product-card button:hover {
@@ -835,3 +836,4 @@ section {
   padding-left: 20px;
   padding-top: 20px;
 }
+
