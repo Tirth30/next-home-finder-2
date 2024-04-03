@@ -36,10 +36,10 @@ const Banner = () => {
                             <div className="banner-area text-center pt-4 pb-4">
                                 <p>Next Home Finder: An Innovative New Search Experience</p>
                                 <h2 className="mt-2 mb-4 banner-title"><strong> Next Home Finder</strong> </h2>
-                                <div className="search-area">
+                                {/* <div className="search-area">
                                     <input value={word} onChange={(e) => findSearch(e)} type="text" className="inp-search" placeholder="Search" />
                                     <button className="btn-search m-2">Search All</button>
-                                </div>
+                                </div> */}
                                 {findResult()}
                             </div>
                         </div>

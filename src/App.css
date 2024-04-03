@@ -712,6 +712,7 @@ section {
 
 .fd-item,.fd-sidebar-item{
   background: white;
+  width: 1290px;
   padding: 35px;
   border-radius: 10px;
   margin-top: 20px;
@@ -719,6 +720,7 @@ section {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .fd-item h4,.fd-sidebar-item h4{
+  width: 1290px;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -755,4 +757,81 @@ section {
 .image-gallery-image{
 
   object-fit: cover;
+}
+
+.w-100{
+    height: 100%;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.product-card p {
+  margin-top: 10px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.detail-img{
+  width: 90%;
+  margin:auto;
+  padding-left: 20px;
+  padding-top: 20px;
 }

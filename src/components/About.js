@@ -15,7 +15,7 @@ const About = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <img src="/img/product1.jpeg" alt="product" className="w-100" />
+                            <img src="logo512 (2).png" alt="product" className="w-100" />
                         </div>
                         <div className="col-lg-6">
                             <div className="about-item">
@@ -26,12 +26,7 @@ const About = () => {
                                    Next Home Finder : An Innovative New Search Experience
 
                             </div>
-                                <div className="about-features">
-                                    {/* <p className="about-feature"><i className="fas fa-long-arrow-alt-right"></i> Find Home by sitting at Home </p>
-                                    {/* <p className="about-feature" ><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p>
-                                    <p className="about-feature"><i className="fas fa-long-arrow-alt-right"></i> Lorem ipsum is simply</p> */}
-
-                                </div>
+                                <p align="justify">The Next Home Finder project aims to revolutionize the way individuals search for and secure their ideal homes by leveraging advanced technologies and innovative features. This platform incorporates state-of-the-art artificial intelligence, machine learning algorithms, and user-friendly interfaces to provide a seamless and personalized home-buying experience.In the ever-evolving landscape of real estate, finding the perfect home has become a complex and time-consuming task. The Next-Home Finder project aims to simplify and enhance the home search experience by leveraging the power of React.js for a dynamic and responsive user interface, combined with efficient DevOps practices to ensure seamless deployment and continuous improvement.</p>    
                             </div>
                         </div>
                     </div>
