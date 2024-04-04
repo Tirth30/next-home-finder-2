@@ -38,6 +38,84 @@ function ProductCards() {
       title: 'Home 3',
       description: '45 Lakhs',
     },
+    {
+      id: 4,
+      image: '../img/banner.jpg',
+      title: 'Home 4',
+      description: '45 Lakhs',
+    },
+    {
+      id: 5,
+      image: '../img/banner.jpg',
+      title: 'Home 5',
+      description: '45 Lakhs',
+    },
+    {
+      id: 6,
+      image: '../img/banner.jpg',
+      title: 'Home 6',
+      description: '45 Lakhs',
+    },
+    {
+      id: 7,
+      image: '../img/banner.jpg',
+      title: 'Home 7',
+      description: '45 Lakhs',
+    },
+    {
+      id: 8,
+      image: '../img/banner.jpg',
+      title: 'Home 8',
+      description: '45 Lakhs',
+    },
+    {
+      id: 9,
+      image: '../img/banner.jpg',
+      title: 'Home 9',
+      description: '45 Lakhs',
+    },
+    {
+      id: 10,
+      image: '../img/banner.jpg',
+      title: 'Home 10',
+      description: '45 Lakhs',
+    },
+    {
+      id: 11,
+      image: '../img/banner.jpg',
+      title: 'Home 11',
+      description: '45 Lakhs',
+    },
+    {
+      id: 12,
+      image: '../img/banner.jpg',
+      title: 'Home 12',
+      description: '45 Lakhs',
+    },
+    {
+      id: 13,
+      image: '../img/banner.jpg',
+      title: 'Home 13',
+      description: '45 Lakhs',
+    },
+    {
+      id: 14,
+      image: '../img/banner.jpg',
+      title: 'Home 14',
+      description: '45 Lakhs',
+    },
+    {
+      id: 15,
+      image: '../img/banner.jpg',
+      title: 'Home 15',
+      description: '45 Lakhs',
+    },
+    {
+      id: 16,
+      image: '../img/banner.jpg',
+      title: 'Home 16',
+      description: '45 Lakhs',
+    },
     // Add other products with unique ids
   ];
 

@@ -1,8 +1,6 @@
 import React from 'react';
-import banner from '../img/banner.jpg';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import { NavLink } from 'react-router-dom';
+
 
 function Villa({ id, image, title, description }) {
   return (
@@ -37,6 +35,12 @@ function Villas() {
       image: '../img/banner.jpg',
       title: 'Villa 3',
       description: '45 Lakhs',
+    },
+    {
+      id: 4,
+      image: '../img/banner.jpg',
+      title: 'Villa 4',
+      description: '80 Lakhs',
     },
     // Add other products with unique ids
   ];

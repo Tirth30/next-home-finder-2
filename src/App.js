@@ -43,7 +43,7 @@ function AppContent() {
         <Route path="/about" component={About}></Route>
         <Route path="/Detail/:id" component={Detail}></Route>
         <Route path="/FlatDetail/:id" component={FlatDetail}></Route>
-        <Route path="/BunglowDetail/:id" component={BunglowDetail}></Route>
+        <Route path="/BunglowsDetail/:id" component={BunglowDetail}></Route>
         <Route path="/VillaDetail/:id" component={VillaDetail}></Route>
         <Route path="/PGDetail/:id" component={PGDetail}></Route>
         <Route path="/Contacts" component={Contacts}></Route>

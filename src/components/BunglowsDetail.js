@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import banner from '../img/banner.jpg'
-import ReactImageGallery from 'react-image-gallery';
+
 
 function BunglowDetail() {
   let { id } = useParams();
