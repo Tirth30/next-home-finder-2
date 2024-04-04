@@ -1,5 +1,5 @@
-import React from "react"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+
 
 const Header = () => {
     return (
@@ -9,10 +9,10 @@ const Header = () => {
                     <div className="container-fluid">
                         <Link className="navbar-brand" to="/">
                             <div className="d-flex align-items-center">
-                            <i className="fas fa-home"></i>
+                                <i className="fas fa-home"></i>
                                 <span className="ms-2">
                                     Next Home Finder
-                           </span>
+                                </span>
                             </div>
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,20 +38,19 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="#"> Category <i className="fas fa-chevron-down"></i></Link>
                                     <ul className="sub-ul">
-                                        <li><Link to="/Flats">Flats</Link></li>
-                                        <li><Link to="/Bunglows">Bunglows</Link></li>
-                                        <li><Link to="/Villas">Villas</Link></li>
-                                        <li><Link to="/PG">PG</Link></li>
+                                        <li><Link to='/Flats'>Flats</Link></li>
+                                        <li><Link to='/Bunglows'>Bunglows</Link></li>
+                                        <li><Link to='/Villas'>Villas</Link></li>
+                                        <li><Link to='/PG'>PG</Link></li>
                                     </ul>
                                 </li>
-                                
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Header;

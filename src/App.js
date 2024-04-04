@@ -15,8 +15,10 @@ import Flats from './components/Flats';
 import Bunglows from './components/Bunglows';
 import Villas from './components/Villas';
 import PG from './components/PG';
-
-
+import FlatDetail from './components/FlatDetails';
+import BunglowDetail from './components/BunglowsDetail';
+import VillaDetail from './components/VillaDetail';
+import PGDetail from './components/PGDetail';
 
 function App() {
   return (
@@ -40,6 +42,10 @@ function AppContent() {
         <Route path="/contact" component={Contact}></Route>
         <Route path="/about" component={About}></Route>
         <Route path="/Detail/:id" component={Detail}></Route>
+        <Route path="/FlatDetail/:id" component={FlatDetail}></Route>
+        <Route path="/BunglowDetail/:id" component={BunglowDetail}></Route>
+        <Route path="/VillaDetail/:id" component={VillaDetail}></Route>
+        <Route path="/PGDetail/:id" component={PGDetail}></Route>
         <Route path="/Contacts" component={Contacts}></Route>
         <Route path="/Liked" component={Liked}></Route>
         <Route path="/Flats" component={Flats}></Route>
