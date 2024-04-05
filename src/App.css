@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap'); 
 @import "~react-image-gallery/styles/css/image-gallery.css";
-
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 *{
   font-family: 'Montserrat', sans-serif;
 }
@@ -800,9 +804,21 @@ section {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width:100%;
+  width:70%;
 }
-
+.like {
+    margin-left:15%;
+    font-size:35px;
+    top: 10px; 
+    right: 10px; 
+    color: rgb(40, 38, 38);
+    cursor: pointer; /* Set cursor to pointer to indicate it's clickable */
+    transition: transform 0.3s ease; 
+}
+.like:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #0056b3;
+ }
 .product-card button:hover {
   background-color: #0056b3;
 }

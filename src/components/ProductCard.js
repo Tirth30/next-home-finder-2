@@ -1,8 +1,7 @@
 import React from 'react';
-import banner from '../img/banner.jpg';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import { NavLink } from 'react-router-dom';
+import { BsFillHouseHeartFill } from "react-icons/bs";
+
 
 function ProductCard({ id, image, title, description }) {
   return (
@@ -13,7 +12,7 @@ function ProductCard({ id, image, title, description }) {
       <Link to={`/Detail/${id}`}> {/* Pass the id as a parameter to the detail page route */}
         <button>View Details</button>
       </Link>
-         <button>Like</button>
+      <BsFillHouseHeartFill className='like' onClick={()=>{alert("Liked Successfully");}}/>
     </div>
   );
 }

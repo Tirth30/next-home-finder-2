@@ -1,7 +1,5 @@
-import myFunction from "./popup"
-
 const Contact = () => {
-    return (
+        return (
         <section className="contact">
             <div className="page-top">
                 <div className="container">
@@ -60,7 +58,7 @@ const Contact = () => {
                                     <textarea type="text" className="ta-contact" rows="4"></textarea>
                                 </div>
                                 <div className="col-lg-12">
-                                    <button className="btn-contact" onClick={myFunction}>Send Feedback</button>
+                                    <button className="btn-contact" onClick={()=>{alert("Your Feedback Has Been Sent !");}}>Send Feedback</button>
                                 </div>
                             </div>
                         </div>
