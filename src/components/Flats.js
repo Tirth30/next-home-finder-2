@@ -1,8 +1,5 @@
 import React from 'react';
-import banner from '../img/banner.jpg';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import { NavLink } from 'react-router-dom';
 
 function Flat({ id, image, title, description }) {
   return (

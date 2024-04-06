@@ -1,8 +1,6 @@
 import React from 'react';
-import banner from '../img/banner.jpg';
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import { NavLink } from 'react-router-dom';
+
 
 function PG({ id, image, title, description }) {
   return (

@@ -19,7 +19,6 @@ import FlatDetail from './components/FlatDetails';
 import BunglowDetail from './components/BunglowsDetail';
 import VillaDetail from './components/VillaDetail';
 import PGDetail from './components/PGDetail';
-import ForgotPassword from './components/forgot';
 import Signup from './components/signup';
 
 function App() {
@@ -34,16 +33,14 @@ function AppContent() {
   const location = useLocation();
   const isLoginPage = location.pathname === '/';
   const isSignupPage = location.pathname === '/signup';
-  const isforgotpage = location.pathname === '/forgot-password';
   const isDetailPage = location.pathname.includes('/Detail'); // Check if current path includes '/Detail'
 
   return (
     <div className="App">
-      {!isLoginPage && !isDetailPage && !isSignupPage && !isforgotpage &&<Header />}
+      {!isLoginPage && !isDetailPage && !isSignupPage &&<Header />}
       <Switch>
         <Route path="/" exact component={Login}></Route>
         <Route path="/signup" exact component={Signup}></Route>
-        <Route path="/forgot-password" exact component={ForgotPassword}></Route>
         <Route path="/home" exact component={Home}></Route>
         <Route path="/contact" component={Contact}></Route>
         <Route path="/about" component={About}></Route>
@@ -59,7 +56,7 @@ function AppContent() {
         <Route path="/Villas" component={Villas}></Route>
         <Route path="/PG" component={PG}></Route>
       </Switch>
-      {!isLoginPage && !isDetailPage && !isSignupPage && !isforgotpage &&<Footer />}
+      {!isLoginPage && !isDetailPage && !isSignupPage &&<Footer />}
     </div>
   );
 }

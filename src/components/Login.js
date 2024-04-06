@@ -56,7 +56,7 @@ const Login = () => {
             {showPassword ? <BiSolidHide /> : <BiSolidShow />}
           </span>
         </div>
-        <button type="submit">Login</button><Link to="/forgot-password"><pre>Forgot Password?</pre></Link>
+        <button type='submit'>Login</button>
       </form>
       <p className='mt-10'>
         Don't have an account? <Link to="/signup">Sign Up</Link>
@@ -64,5 +64,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;
