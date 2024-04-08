@@ -18,6 +18,9 @@ function ProductCard({ id, image, title, price }) {
 
 function ProductCards() {
   const [priceFilter, setPriceFilter] = useState(null);
+  const [cityFilter, setCityFilter] = useState('');
+  const [statusFilter, setStatusFilter] = useState(''); 
+  const [timeFilter, setTimeFilter] = useState(''); // Add this line
   const [inputValue, setInputValue] = useState('');
 
   const products = [
@@ -39,7 +42,9 @@ function ProductCards() {
       image: '../img/banner.jpg',
       title: 'Home 2',
       price: '5 thousand/month',
+      city: 'Mumbai',
       status: 'rent',
+      time : 'One Month Ago', // Add time here
       amenities : 'garden , clun house',
       rooms : '1bhk',
       type:'apartment',
@@ -50,7 +55,9 @@ function ProductCards() {
       image: '../img/banner.jpg',
       title: 'Home 3',
       price: '45 Lakhs',
-      time : '2nd Hand',
+      city: 'Delhi',
+      status: 'sale', 
+      time : 'Two Months Ago', // Add time here
       type:'farmhouse',
     },
     {
@@ -58,81 +65,12 @@ function ProductCards() {
       image: '../img/banner.jpg',
       title: 'Home 4',
       price: '45 Lakhs',
+      city: 'Kolkata',
+      status: 'rent', 
+      time : 'Three Months Ago', // Add time here
       type:'bunglow',
     },
-    {
-      id: 5,
-      image: '../img/banner.jpg',
-      title: 'Home 5',
-      price: '45 Lakhs',
-      type:'villa',
-    },
-    {
-      id: 6,
-      image: '../img/banner.jpg',
-      title: 'Home 6',
-      price: '45 Lakhs',
-    },
-    {
-      id: 7,
-      image: '../img/banner.jpg',
-      title: 'Home 7',
-      price: '45 Lakhs',
-    },
-    {
-      id: 8,
-      image: '../img/banner.jpg',
-      title: 'Home 8',
-      price: '45 Lakhs',
-    },
-    {
-      id: 9,
-      image: '../img/banner.jpg',
-      title: 'Home 9',
-      price: '45 Lakhs',
-    },
-    {
-      id: 10,
-      image: '../img/banner.jpg',
-      title: 'Home 10',
-      price: '45 Lakhs',
-    },
-    {
-      id: 11,
-      image: '../img/banner.jpg',
-      title: 'Home 11',
-      price: '45 Lakhs',
-    },
-    {
-      id: 12,
-      image: '../img/banner.jpg',
-      title: 'Home 12',
-      price: '45 Lakhs',
-    },
-    {
-      id: 13,
-      image: '../img/banner.jpg',
-      title: 'Home 13',
-      price: '40 Lakhs',
-    },
-    {
-      id: 14,
-      image: '../img/banner.jpg',
-      title: 'Home 14',
-      price: '27 Lakhs',
-    },
-    {
-      id: 15,
-      image: '../img/banner.jpg',
-      title: 'Home 15',
-      price: '35 Lakhs',
-    },
-    {
-      id: 16,
-      image: '../img/banner.jpg',
-      title: 'Home 16',
-      price: '45 Lakhs',
-    },
+    // Add the rest of your product data here
   ];
 
   const handleApplyFilter = () => {
@@ -142,31 +80,60 @@ function ProductCards() {
   const handleResetFilter = () => {
     setPriceFilter(null);
     setInputValue('');
+    setCityFilter('');
+    setStatusFilter(''); 
+    setTimeFilter(''); // Add this line
   };
 
-  const filteredProducts = priceFilter 
-    ? products.filter(product => {
-        const priceNumber = Number(product.price.replace(/[^0-9.-]+/g,""));
-        const priceUnit = product.price.replace(/[0-9]/g, '').trim();
+  const filteredProducts = products.filter(product => {
+    const priceNumber = Number(product.price.replace(/[^0-9.-]+/g,""));
+    const priceUnit = product.price.replace(/[0-9]/g, '').trim();
 
-        switch(priceUnit) {
-          case 'Lakhs':
-            return priceNumber * 100000 <= priceFilter;
-          case 'thousand/month':
-            return priceNumber * 1000 <= priceFilter;
-          case 'cr':
-            return priceNumber * 10000000 <= priceFilter;
-          default:
-            return true;
-        }
-      })
-    : products;
+    let priceCondition = true;
+    if (priceFilter) {
+      switch(priceUnit) {
+        case 'Lakhs':
+          priceCondition = priceNumber * 100000 <= priceFilter;
+          break;
+        case 'thousand/month':
+          priceCondition = priceNumber * 1000 <= priceFilter;
+          break;
+        case 'cr':
+          priceCondition = priceNumber * 10000000 <= priceFilter;
+          break;
+        default:
+          priceCondition = true;
+      }
+    }
+
+    const cityCondition = cityFilter ? product.city.toLowerCase() === cityFilter.toLowerCase() : true;
+    const statusCondition = statusFilter ? product.status.toLowerCase() === statusFilter.toLowerCase() : true; 
+    const timeCondition = timeFilter ? product.time.toLowerCase() === timeFilter.toLowerCase() : true; // Add this line
+
+    return priceCondition && cityCondition && statusCondition && timeCondition; // Add timeCondition here
+  });
 
   return (
-    <div className="product-cards">
+    <>
+    <div className="filter-container">
       <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max price" />
+      <input type="text" value={cityFilter} onChange={e => setCityFilter(e.target.value)} placeholder="City" />
+      <select value={statusFilter} onChange={e => setStatusFilter(e.target.value)}> 
+        <option value="">All Status</option>
+        <option value="sale">For Sale</option>
+        <option value="rent">For Rent</option>
+      </select>
+      <select value={timeFilter} onChange={e => setTimeFilter(e.target.value)}> {/* Add this line */}
+        <option value="">All Times</option>
+        <option value="New Launch">New Launch</option>
+        <option value="One Month Ago">One Month Ago</option>
+        <option value="Two Months Ago">Two Months Ago</option>
+        <option value="Three Months Ago">Three Months Ago</option>
+    </select> {/* Add this line */}
       <button onClick={handleApplyFilter}>Apply Filter</button>
       <button onClick={handleResetFilter}>Reset Filter</button>
+    </div>
+    <div className="product-cards">
       {filteredProducts.map((product, index) => (
         <ProductCard
           key={index}
@@ -177,6 +144,7 @@ function ProductCards() {
         />
       ))}
     </div>
+    </>
   );
 }
 
