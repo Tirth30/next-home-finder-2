@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillHouseHeartFill } from "react-icons/bs";
-
 
 function ProductCard({ id, image, title, price }) {
   return (
@@ -18,6 +17,9 @@ function ProductCard({ id, image, title, price }) {
 }
 
 function ProductCards() {
+  const [priceFilter, setPriceFilter] = useState(null);
+  const [inputValue, setInputValue] = useState('');
+
   const products = [
     {
       id: 1,
@@ -111,19 +113,19 @@ function ProductCards() {
       id: 13,
       image: '../img/banner.jpg',
       title: 'Home 13',
-      price: '45 Lakhs',
+      price: '40 Lakhs',
     },
     {
       id: 14,
       image: '../img/banner.jpg',
       title: 'Home 14',
-      price: '45 Lakhs',
+      price: '27 Lakhs',
     },
     {
       id: 15,
       image: '../img/banner.jpg',
       title: 'Home 15',
-      price: '45 Lakhs',
+      price: '35 Lakhs',
     },
     {
       id: 16,
@@ -131,12 +133,41 @@ function ProductCards() {
       title: 'Home 16',
       price: '45 Lakhs',
     },
-    // Add other products with unique ids
   ];
+
+  const handleApplyFilter = () => {
+    setPriceFilter(inputValue);
+  };
+
+  const handleResetFilter = () => {
+    setPriceFilter(null);
+    setInputValue('');
+  };
+
+  const filteredProducts = priceFilter 
+    ? products.filter(product => {
+        const priceNumber = Number(product.price.replace(/[^0-9.-]+/g,""));
+        const priceUnit = product.price.replace(/[0-9]/g, '').trim();
+
+        switch(priceUnit) {
+          case 'Lakhs':
+            return priceNumber * 100000 <= priceFilter;
+          case 'thousand/month':
+            return priceNumber * 1000 <= priceFilter;
+          case 'cr':
+            return priceNumber * 10000000 <= priceFilter;
+          default:
+            return true;
+        }
+      })
+    : products;
 
   return (
     <div className="product-cards">
-      {products.map((product, index) => (
+      <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max price" />
+      <button onClick={handleApplyFilter}>Apply Filter</button>
+      <button onClick={handleResetFilter}>Reset Filter</button>
+      {filteredProducts.map((product, index) => (
         <ProductCard
           key={index}
           id={product.id} 
@@ -150,4 +181,3 @@ function ProductCards() {
 }
 
 export default ProductCards;
-

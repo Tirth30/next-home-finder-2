@@ -29,10 +29,9 @@ const Signup = () => {
         <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder='Enter Your Password' required />
         <label htmlFor="confirmPassword">Confirm Password:</label>
         <input type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder='Enter Confirm Password' required />
-        <Link to="/">
-            <button type="submit">Signup</button>
-        </Link>
+        <button type="submit">Signup</button>
       </form>
+      <p>Already have an account? <Link to="/">Login here</Link></p>
     </div>
   );
 };
