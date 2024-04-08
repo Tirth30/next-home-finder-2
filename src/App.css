@@ -955,3 +955,19 @@ input[type='number'] {
 .filter-container button:hover {
   background-color: #45a049;
 }
+
+.amenities-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.amenities-checkboxes label {
+  margin-right: 20px; /* Adjust as needed */
+  margin-top: 10px;
+}
+
+.amenities-checkboxes input[type="checkbox"] {
+  margin-right: 5px; /* Adjust as needed */
+}
+
