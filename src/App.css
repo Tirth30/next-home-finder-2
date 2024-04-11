@@ -926,6 +926,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 input[type='number'] {
   -moz-appearance: textfield;
+ 
 }
 
 .filter-container {
@@ -933,27 +934,27 @@ input[type='number'] {
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
+  padding: 10px;
 }
 
 .filter-container input[type="number"],
 .filter-container button {
   padding: 10px;
   font-size: 16px;
-  border: none;
   border-radius: 5px;
 }
 
 .filter-container button {
-  background-color: #4CAF50; /* Green */
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.3s;
+  background-color: #364465;
 }
 
 .filter-container button:hover {
-  background-color: #45a049;
+  background-color: #6e6ef3;
 }
 
 .amenities-checkboxes {
@@ -970,4 +971,7 @@ input[type='number'] {
 .amenities-checkboxes input[type="checkbox"] {
   margin-right: 5px; /* Adjust as needed */
 }
+
+
+
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillHouseHeartFill } from "react-icons/bs";
 
-function ProductCard({ id, image, title, price }) {
+function ProductCard({ id, image, title, price,}) {
   return (
     <div className="product-card">
       <img src={image} alt={title} />
@@ -290,7 +290,7 @@ function ProductCards() {
   return (
     <>
       <div className="filter-container">
-        <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max price" />
+      <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max price" /> 
         <select value={cityFilter} onChange={e => setCityFilter(e.target.value)}>
           <option value="">Select City</option>
           <option value="Ahmedabad">Ahmedabad</option>
@@ -335,6 +335,7 @@ function ProductCards() {
           <option value="4bhk">4 BHK</option>
           {/* Add more room options as needed */}
         </select>
+        <pre></pre>
         <div>
         <select value={typeFilter} onChange={e => setTypeFilter(e.target.value)}>
           <option value="">All Types</option>
