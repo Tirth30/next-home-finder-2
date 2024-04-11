@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillHouseHeartFill } from "react-icons/bs";
 
-function ProductCard({ id, image, title, price,}) {
+function ProductCard({ id, image, title, price, }) {
   return (
     <div className="product-card">
       <img src={image} alt={title} />
@@ -30,55 +30,55 @@ function ProductCards() {
   const products = [
     {
       id: 1,
-      image: '../img/banner.jpg',
-      title: 'Home 1',
-      price: '25 Lakhs',
+      image: 'https://housing-images.n7net.in/012c1500/1e4086cf1d69ead051e0b6d2d25277c2/v0/fs.jpeg',
+      title: 'Vardan Sky',
+      price: '50 Lakhs',
       city : 'Ahmedabad',
       status : 'sale',
       time : 'New Launch',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
+      amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
+      rooms : '2 BHK',
       type:'flat',
-      area : '90 sq. feet',
+      area : '1377.00 sq.ft',
     },
     {
       id: 2,
-      image: '../img/banner.jpg',
-      title: 'Home 2',
-      price: '5 thousand/month',
-      city: 'Mumbai',
-      status: 'rent',
+      image: 'https://housing-images.n7net.in/4f2250e8/43810102fab0e69010c15ff1ef4ea06b/v0/large/pacifica_aurum_villas_phase_2-pudupakkam_tamil_nadu-chennai-pacifica_builders_pvt_ltd.jpeg',
+      title: 'Pacifica Aurum Villas Phase 2',
+      price: '2.69 Cr',
+      city: 'Chennai',
+      status: 'sale',
       time : 'One Month Ago',
-      amenities : 'garden , clun house',
-      rooms : '1bhk',
-      type:'apartment',
-      area : '50 sq. feet'
+      amenities : 'Childrens Play Area , Parking , CCTV',
+      rooms : '5 BHK',
+      type:'Villas',
+      area : '3812.00 sq.ft'
     },
     {
       id: 3,
-      image: '../img/banner.jpg',
-      title: 'Home 3',
-      price: '45 Lakhs',
-      city: 'Delhi',
-      status: 'sale', 
+      image: 'https://housing-images.n7net.in/01c16c28/58f481a0a38b3b0607580af98f0150dd/v0/fs/3_bhk_apartment-for-rent-wadala_east-Mumbai-living_room.jpg',
+      title: 'Ajmera Julian Alps',
+      price: '18000/month',
+      city: 'Mumbai',
+      status: 'rent', 
       time : 'Two Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'farmhouse',
-      area : '90 sq. feet',
+      amenities : 'Childrens Play Area',
+      rooms : '3 BHK',
+      type:'flat',
+      area : '1150 sq.ft',
     },
     {
       id: 4,
-      image: '../img/banner.jpg',
-      title: 'Home 4',
-      price: '45 Lakhs',
-      city: 'Kolkata',
-      status: 'rent', 
-      time : 'Three Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'bunglow',
-      area : '90 sq. feet',
+      image: 'https://housing-images.n7net.in/4f2250e8/3dcb1d9aa5d845defe649b92dca6fb7e/v0/fs-large/vbhc_springwater-devkhope-mumbai-vbhc_value_homes_pvt_ltd.jpeg',
+      title: 'VBHC Springwater',
+      price: '19.99 Lakhs',
+      city: 'Mumbai',
+      status: 'Sale', 
+      time : 'New Launch',
+      amenities : 'parking , CCTV',
+      rooms : '1 BHK',
+      type:'flat',
+      area : '429.00 sq.ft',
     },
     {
       id: 5,
@@ -312,27 +312,28 @@ function ProductCards() {
         <div className="amenities-checkboxes">
           <label>Amenities :</label>
           <label>
-            <input type="checkbox" value="garden" checked={amenitiesFilter.includes("garden")} onChange={e => toggleAmenityFilter(e.target.value)} />
-             Garden
-          </label>
-          <label>
             <input type="checkbox" value="parking" checked={amenitiesFilter.includes("parking")} onChange={e => toggleAmenityFilter(e.target.value)} />
              Parking
           </label>
           <label>
-            <input type="checkbox" value="gym" checked={amenitiesFilter.includes("gym")} onChange={e => toggleAmenityFilter(e.target.value)} />
-             Gym
+            <input type="checkbox" value="CCTV" checked={amenitiesFilter.includes("CCTV")} onChange={e => toggleAmenityFilter(e.target.value)} />
+             CCTV
           </label>
           <label>
-            <input type="checkbox" value="club house" checked={amenitiesFilter.includes("club house")} onChange={e => toggleAmenityFilter(e.target.value)} />
-             Club House
+            <input type="checkbox" value="Solar Lighting" checked={amenitiesFilter.includes("Solar Lighting")} onChange={e => toggleAmenityFilter(e.target.value)} />
+             Solar Lighting
+          </label>
+          <label>
+            <input type="checkbox" value="Childrens Play Area" checked={amenitiesFilter.includes("Childrens Play Area")} onChange={e => toggleAmenityFilter(e.target.value)} />
+            Childrens Play Area
           </label>
           <select value={roomsFilter} onChange={e => setRoomsFilter(e.target.value)}>
           <option value="">All Rooms</option>
-          <option value="1bhk">1 BHK</option>
-          <option value="2bhk">2 BHK</option>
-          <option value="3bhk">3 BHK</option>
-          <option value="4bhk">4 BHK</option>
+          <option value="1 BHK">1 BHK</option>
+          <option value="2 BHK">2 BHK</option>
+          <option value="3 BHK">3 BHK</option>
+          <option value="4 BHK">4 BHK</option>
+          <option value="5 BHK">5 BHK</option>
           {/* Add more room options as needed */}
         </select>
         <pre></pre>
@@ -351,7 +352,7 @@ function ProductCards() {
         <div>
         <select value={areaFilter} onChange={e => setAreaFilter(e.target.value)}>
           <option value="">Select Area</option>
-          <option value="50 sq. feet">50 sq. feet</option>
+          <option value="50 sq.ft">50 sq.ft</option>
           {/* Add more options as needed */}
         </select>
         </div>
