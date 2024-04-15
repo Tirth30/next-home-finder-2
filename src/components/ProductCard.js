@@ -44,14 +44,14 @@ function ProductCards() {
     {
       id: 2,
       image: 'https://housing-images.n7net.in/4f2250e8/43810102fab0e69010c15ff1ef4ea06b/v0/large/pacifica_aurum_villas_phase_2-pudupakkam_tamil_nadu-chennai-pacifica_builders_pvt_ltd.jpeg',
-      title: 'Pacifica Aurum Villas Phase 2',
-      price: '2.69 Cr',
+      title: 'Pacifica Aurum Villas',
+      price: '3 Cr',
       city: 'Chennai',
       status: 'sale',
       time : 'One Month Ago',
       amenities : 'Childrens Play Area , Parking , CCTV',
       rooms : '5 BHK',
-      type:'Villas',
+      type:'villa',
       area : '3812.00 sq.ft'
     },
     {
@@ -71,7 +71,7 @@ function ProductCards() {
       id: 4,
       image: 'https://housing-images.n7net.in/4f2250e8/3dcb1d9aa5d845defe649b92dca6fb7e/v0/fs-large/vbhc_springwater-devkhope-mumbai-vbhc_value_homes_pvt_ltd.jpeg',
       title: 'VBHC Springwater',
-      price: '19.99 Lakhs',
+      price: '20 Lakhs',
       city: 'Mumbai',
       status: 'Sale', 
       time : 'New Launch',
@@ -82,42 +82,42 @@ function ProductCards() {
     },
     {
       id: 5,
-      image: '../img/banner.jpg',
-      title: 'Home 5',
-      price: '45 Lakhs',
-      city: 'Chennai',
+      image: 'https://housing-images.n7net.in/012c1500/6f5d5e73694537131cd31e9a73c9c6d6/v0/fs.jpeg',
+      title: 'Krishna Homes',
+      price: '65 Lakhs',
+      city: 'Delhi',
       status: 'sale', 
-      time : 'Four Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'villa',
-      area : '90 sq. feet',
+      time : 'One Months Ago',
+      amenities : 'CCTV',
+      rooms : '4 BHK',
+      type:'apartment',
+      area : '1250.00 sq.ft',
     },
     {
       id: 6,
-      image: '../img/banner.jpg',
-      title: 'Home 6',
-      price: '45 Lakhs',
+      image: 'https://housing-images.n7net.in/4f2250e8/0d7a87bc4f02894063e24cd7441f9aaa/v0/large/jrc_sanzio-sarjapur-bengaluru-jrc_projects_pvt_ltd.png',
+      title: 'JRC Sanzio',
+      price: '2 Cr',
       city: 'Bangalore',
-      status: 'rent', 
-      time : 'Five Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'flat',
-      area : '90 sq. feet',
+      status: 'sale', 
+      time : 'New Launch',
+      amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
+      rooms : '3 BHK',
+      type: 'villa',
+      area : '2192.00 sq.ft',
     },
     {
       id: 7,
-      image: '../img/banner.jpg',
-      title: 'Home 7',
-      price: '45 Lakhs',
-      city: 'Hyderabad',
-      status: 'sale', 
-      time : 'Six Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'farmhouse',
-      area : '90 sq. feet',
+      image: 'https://housing-images.n7net.in/012c1500/a5051ba8baa3e022be734cdc37b07b66/v0/fs.jpg',
+      title: 'Bakeri Sarvesh',
+      price: '11500/month',
+      city: 'Ahmedabad',
+      status: 'Rent', 
+      time : 'One Months Ago',
+      amenities : 'Childrens Play Area, parking , CCTV',
+      rooms : '2 BHK',
+      type:'flat',
+      area : '1100 sq.ft',
     },
     {
       id: 8,
@@ -240,8 +240,13 @@ function ProductCards() {
   
 
   const handleApplyFilter = () => {
+    if (inputValue < 100000) {
+      alert("Please enter valid amount");
+      return;
+    }
     setPriceFilter(inputValue);
   };
+  
 
   const handleResetFilter = () => {
     setPriceFilter(null);
@@ -265,10 +270,7 @@ function ProductCards() {
         case 'Lakhs':
           priceCondition = priceNumber * 100000 <= priceFilter;
           break;
-        case 'thousand/month':
-          priceCondition = priceNumber * 1000 <= priceFilter;
-          break;
-        case 'cr':
+        case 'Cr':
           priceCondition = priceNumber * 10000000 <= priceFilter;
           break;
         default:
@@ -283,14 +285,25 @@ function ProductCards() {
     const roomsCondition = roomsFilter ? product.rooms === roomsFilter : true;
     const typeCondition = typeFilter ? product.type === typeFilter : true;
     const areaCondition = areaFilter ? product.area === areaFilter : true;
-
+    
     return priceCondition && cityCondition && statusCondition && timeCondition && amenitiesCondition && roomsCondition && typeCondition && areaCondition;
   });
 
+  function toggleAmenityFilter(amenity) {
+    setAmenitiesFilter(prevFilters => {
+      if (prevFilters.includes(amenity)) {
+        return prevFilters.filter(filter => filter !== amenity);
+      } else {
+        return [...prevFilters, amenity];
+      }
+    });
+  }
+  
+  
   return (
     <>
       <div className="filter-container">
-      <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max price" /> 
+      <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max Price"/> 
         <select value={cityFilter} onChange={e => setCityFilter(e.target.value)}>
           <option value="">Select City</option>
           <option value="Ahmedabad">Ahmedabad</option>
@@ -336,7 +349,7 @@ function ProductCards() {
           <option value="5 BHK">5 BHK</option>
           {/* Add more room options as needed */}
         </select>
-        <pre></pre>
+        <pre>               </pre>
         <div>
         <select value={typeFilter} onChange={e => setTypeFilter(e.target.value)}>
           <option value="">All Types</option>
@@ -373,16 +386,6 @@ function ProductCards() {
       </div>
     </>
   );
-
-  function toggleAmenityFilter(amenity) {
-    setAmenitiesFilter(prevFilters => {
-      if (prevFilters.includes(amenity)) {
-        return prevFilters.filter(filter => filter !== amenity);
-      } else {
-        return [...prevFilters, amenity];
-      }
-    });
-  }
 }
 
 export default ProductCards;
