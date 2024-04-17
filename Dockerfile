@@ -6,12 +6,16 @@ WORKDIR /app
 
 # Copy the package.json and package-lock.json (if available)
 COPY package*.json ./
+<<<<<<< HEAD
 
 # Install dependencies
 # Note: Using npm ci instead of npm install to ensure that package-lock.json is used
 RUN npm ci --only=production
 
 # Copy the rest of your app's source code
+=======
+RUN npm install --force
+>>>>>>> 09d4e2838df85d27da15af9e9dcb09527b8fa00e
 COPY . .
 
 # Build the React app
