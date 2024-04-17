@@ -816,14 +816,14 @@ function Detail() {
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.837480942749!2d72.5706888!3d23.0848616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e839e56928c03%3A0x34c0756e8cc0f3b7!2sBakeri%20Sarvesh!5e0" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>;
+</div>
   }else if (id == '8'){
     detailContent = <div className="flat-detail">
     <div className="page-top">
@@ -831,7 +831,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -841,31 +840,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">MG Builders Apartments</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        MG Builders Chhatarpur JVTS Apartments, Chhattarpur Extension, Chhattarpur, New Delhi</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 27.0 L</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="mg" src='https://housing-images.n7net.in/01c16c28/91b63b1b9e252fef3aa67359bcda000d/v0/fs/2_bhk_apartment-for-sale-chhatarpur-New+Delhi-hall.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="mg" src='https://housing-images.n7net.in/01c16c28/c6a71a14df42bcf94002d967f9317f10/v0/fs/2_bhk_apartment-for-sale-chhatarpur-New+Delhi-kitchen.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="mg" src='https://housing-images.n7net.in/01c16c28/1711011135663_19ed16eb3c93cfe1f6ae5c76b8ed9e18/v0/fs/2_bhk_apartment-for-sale-chhatarpur-New+Delhi-living_room.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align ="justify">Looking for a 2 BHK Flat for sale in Delhi? Your search ends here. Buy this 2 BHK property in Delhi's finest location, Chhatarpur. It is on floor 1 out of 5 floors. This Flat is available at a reasonable price of Rs 27.0 L. The built up area of this property is 720 Square feet. It is spacious for a family and this property has a carpet area of 710 Square feet. There are 2 bedrooms and 2 bathroom.</p>
+                             <button onClick={()=>{alert("Emaill : MGbuilders@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -876,90 +875,51 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
-                                    <span>5</span>
+                                    <span>3</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom:  </span>
+                                    <span>2</span>
                                 </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            </div> 
+                            <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='vardanfp'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/2_bhk_Bungalow_floor_plan.jpg/800px-2_bhk_Bungalow_floor_plan.jpg"></img></div>                       
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>24X7 Water Supply</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Closed Car Parking</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Power Backup</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Lifts</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Fire Sprinklers</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14027.66242967575!2d77.1771178!3d28.491691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fcee1c1b4e7%3A0x9f9a93aa9ca60235!2sMG%20Builders%20Chhatarpur%20JVTS%20Apartments%2C%20Chhattarpur%20Extension%2C%20Chhattarpur%2C%20New%20Delhi!5e0" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -974,7 +934,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -984,31 +943,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Four Bungalows</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Four Bungalows, Andheri West, Mumbai</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 33.0 Cr</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="fb" src='https://housing-images.n7net.in/01c16c28/f8a2db5f4de8d7eb71d02fa4566387ac/v0/fs/4_bhk_apartment-for-sale-andheri_west-Mumbai-bedroom.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="fb" src='https://housing-images.n7net.in/01c16c28/e2382b8d2109b510664249559307bb05/v0/fs/4_bhk_apartment-for-sale-andheri_west-Mumbai-hall.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="fb" src='https://housing-images.n7net.in/01c16c28/6af54817084172794826c4b053a29430/v0/fs/4_bhk_apartment-for-sale-andheri_west-Mumbai-balcony.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">A 4 BHK Flat for sale in Andheri West, Mumbai. This beautifully designed 4 BHK unit with all the modern-day comforts is one of Andheri West's most desired properties. Contact now for more information. This 4 BHK unit is on floor 22. There are 22 floors in this property. The price of this Flat is Rs 33.0 Cr. Each unit has a built-up area of 5000 square_feet. The carpet area is 3800 square_feet. This West-facing property has an excellent view. There are 4 bedrooms. There is provision for 4 bathroom. This property is also equipped with a servant room. The Flat in Andheri West, Mumbai has lift facility. It is a thoroughly secure premise with cctv facility. Other facilities include provisions for Gym, Garden, Sports facility, Swimming pool, Intercom, Community hall. This property also enjoys power backup facility. Regular water supply is available in this property. Kids have access to a dedicated kids area. This is a gated community. It is also close to RichFeel Trichology Center, Dr. Pareek's Deafness clinic and ENT Centre, Health Reactive I Cancer care treatment I Immunity booster</p>
+                             <button onClick={()=>{alert("Emaill : fourbunglows@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1022,87 +981,64 @@ function Detail() {
                                     <span>5</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom:  </span>
+                                    <span>4</span>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='fbfp'>
+                                   <pre><img src="https://live.staticflickr.com/5087/5298854266_55ae1ddcc2_z.jpg"></img><img src="https://live.staticflickr.com/5044/5298259411_93ac98ae9e_z.jpg"></img></pre> 
+                                </div>                       
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Garden</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Car Parking</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gas Pipeline</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Pool</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Sports Facility</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Supply</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Community Hall</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gymnasium</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.174279901534!2d72.8264378!3d19.1247347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9e02e2fcfb3%3A0x1c206d4076de21ea!2sFour%20Bungalows%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1117,7 +1053,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1127,31 +1062,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Nandanvan Nature Nest</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Nandanvan Nature Nest , Bhavda, Ahmedabad East</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 92.0 L</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://imagecdn.99acres.com/media1/24288/0/485760994O-1712908750436.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://imagecdn.99acres.com/media1/24288/1/485761006O-1712908751080.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://imagecdn.99acres.com/media1/24288/1/485761012O-1712908754540.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">Fully developed lush green lawn and garden in our compound. Semi furnished. Modular kitchen, two beds, a/c. 24 hours water availability. It is a weekend villa, very well developed community. Very well managed. Have club house, gym, open air theater, swimming pool, mini theater, indoor games, 3 gardens, on the banks of mashwo river, have river front developed. Lots of trees, full of nature, rcc roads inside, lights, full time watchmen and night patrolling, lots of birds and animals.</p>
+                             <button onClick={()=>{alert("Emaill : farmhouse@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1165,36 +1100,8 @@ function Detail() {
                                     <span>5</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom  </span>
+                                    <span>4</span>
                                 </div>
                             </div>
                         </div>
@@ -1203,49 +1110,49 @@ function Detail() {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Swimming Pool</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Garden</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Fire Sprinklers</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Supply</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Security</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Power Backup</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Parking</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Maintenance Staff</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.777135033962!2d72.7737184!3d22.9711762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e633de91336b1%3A0x94ccbf5f52a8a331!2sNandanvan%20Nature%20Nest!5e0!3m2!1sen!2sus!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1260,7 +1167,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1270,31 +1176,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Corner House</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        No 14 vidhyalakshmi street, Rajeswari Nagar, Selaiyur, Chennai south, Chennai.</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 64.31 L - 71.85 L</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://housing-images.n7net.in/012c1500/b228c331a5dafe34282ccf1ebf480ca0/v0/fs.jpeg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://housing-images.n7net.in/012c1500/b378bffe5a946092b2a2fc4ad012bfac/v0/fs.jpeg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://housing-images.n7net.in/012c1500/fa82639ca193f521d0b3ba5b19843f6c/v0/fs.jpeg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">MS Builders Chennai has lauched MS Corner House in Selaiyur, Chennai. The address of MS MS Corner House is Tambaram, Chennai South.Own a home in MS MS Corner House today!.This project has been developed by MS Builders Chennai.Selaiyur is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.</p>
+                             <button onClick={()=>{alert("Emaill : CornerHouse@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1305,40 +1211,15 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
-                                    <span>5</span>
+                                    <span>3</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom:  </span>
+                                    <span>2</span>
                                 </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
+                                <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='vardanfp'><img src="https://housing-images.n7net.in/91aba65c/c1c71447c19fa228c0466ef22adca786/v0/fs.jpeg"></img></div>
                             </div>
                         </div>
                         <div className="fd-item fd-features">
@@ -1346,49 +1227,49 @@ function Detail() {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Lift</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Supply</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Security</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Power Backup</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Maintenance Staff</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Fire Sprinklers</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gas Pipeline</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Community Hall</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.224854680869!2d80.1374179!3d12.9247258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f1c35a4128b%3A0x271a161833cc9cf2!2s10%2F12%2C%20Varalakshmi%20St%2C%20Rajeshwari%20Nagar%2C%20Tambaram%2C%20Chennai%2C%20Tamil%20Nadu%20600059!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1403,7 +1284,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1413,31 +1293,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">RR WishTales</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Sy No. 108/2 ,Jakkur Road Village, Jakkur, North Bangalore, Bangalore</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 1 Cr - 1.3 Cr</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://housing-images.n7net.in/012c1500/6ce369b7c90cb89d3994948e51ba180d/v0/fs.jpeg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://housing-images.n7net.in/012c1500/92813d9b990c6586583e72a6b02440ef/v0/fs.jpeg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://housing-images.n7net.in/012c1500/b3ecc9c9634476aeed94dc5931523ee7/v0/fs.jpeg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">RR WishTales: 2,3,4 BHK boutique luxury homes for your dream! Where hearts & beauty unite. Here, you experience a home immersed in a world of innovative design and meticulous planning. As privacy and Vaastu as our core priorities we strive to provide you with an uncompromised living experience. Every detail is thoughtfully curated to harmonize aesthetics, functionality, and comfortable living. Here you will discover a home built with precision and passion, where every aspect of it holds a promise of lasting strength and unwavering durability. Located in prime of North Bengaluru Get ready to experience a lifestyle beyond compare, where comfort and sophistication intertwine to create an unparalleled haven of luxe. Our team believes in abundant spaces and uncompromised aesthetics, thereby delivering you a home of ample space. Enjoy your everyday adorned with premium specifications resulting in a life of unparalleled comfort. A home is where every moment unfolds into a symphony of happiness. WishTales is a haven of joy and opulence! Here the art of living finds its truest form. It is a carefully curated masterpiece where finesse and perfection converge in harmony.</p>
+                             <button onClick={()=>{alert("Emaill : RR142@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1448,90 +1328,65 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
-                                    <span>5</span>
+                                    <span>3</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom:  </span>
+                                    <span>2</span>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='vardanfp'><img src="https://housing-images.n7net.in/91aba65c/5f9c3301c114501f24b5f75ee5c6b90c/v0/fs.jpeg"></img></div>   
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Children's Play Area</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Multipurpose Hall</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Swimming Pool</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Indoor Games</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Library</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gymnasium</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Kid's Pool</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Club House</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2434868933993!2d77.5295007!3d13.1300548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae184ae1a4275b%3A0x9d7387a249ea12b8!2sJakkur%20Rd%2C%20Bengaluru%2C%20Karnataka%20560064!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1546,7 +1401,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1556,31 +1410,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Kopren Park View</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Science City Approach Road,Ognaj Bypass Road, Ahmedabad</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 55.01 L - 75.01 L</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://housing-images.n7net.in/4f2250e8/795f503c42a906d3464387f930f624fb/v0/large/kopren_park_view-ognaj-ahmedabad-shoolin_developers.jpeg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://housing-images.n7net.in/012c1500/2b37847948d56e75f02ebab0e4f71676/v0/fs.jpeg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://housing-images.n7net.in/012c1500/83e79012bbcb788606ad25dd6dbd3f3c/v0/fs.jpeg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">Kopren Park View is a project by Shoolin Developers in Ahmedabad. It is a Under Construction project. Kopren Park View offers some of the most conveniently designed Apartment. Located in Ognaj, it is a residential project. The project is spread over 0.92 Acres . It has 136 units. There are 4 buildings in this project. Kopren Park View offers some of the most exclusive 2 BHK, 3 BHK. As per the area plan, units are in the size range of 142.0 - 195.0 sq.yd.. Launched in October 2022, Kopren Park View is slated for possession in Dec, 2024. The address of Kopren Park View is Science City Approach Road,Ognaj Bypass Road.</p>
+                             <button onClick={()=>{alert("Emaill : Kopren@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1591,90 +1445,65 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
-                                    <span>5</span>
+                                    <span>4</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom:  </span>
+                                    <span>3</span>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
+                            <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='vardanfp'><img src="https://housing-images.n7net.in/91aba65c/26160d049cd46799d36cf8a207e312be/v0/fs.jpeg"></img></div>
                             </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                        </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Swimming Pool</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>24X7 Water Supply</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Community Hall</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gymnasium</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>24x7 Security</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Cycling & Jogging Track</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Indoor Games</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Fire Fighting System</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6881447577517!2d72.508079!3d23.1150293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9d670a2585d3%3A0x3543f7423d1fe031!2sKopren%20Park%20View!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1689,7 +1518,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1699,31 +1527,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Risland Sky Mansion</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Chhatarpur, South Delhi, New Delhi</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 6 Cr</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://housing-images.n7net.in/012c1500/fdb9aeb2cfc02e8428f8285e07dd8d0c/v0/fs-large.jpeg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://housing-images.n7net.in/012c1500/180860feed71158c637e515d0a4984bf/v0/fs.jpeg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://housing-images.n7net.in/012c1500/57e6f1fb0067368a7d4e0b600d2a8c2c/v0/fs.jpeg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">Sky Mansion, an exemplary benchmark of Luxury Living in the heart of South Delhi, stands as the first 100 meter sky scrapper in the area. One of India’s most Premium Projects with beautifully crafted 3 & 4 Bedrooms and Exclusive Penthouses having uninterrupted view of Chattarpur & Aravalli Greens.</p>
+                             <button onClick={()=>{alert("Emaill : rislandskymansion@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1734,90 +1562,65 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
-                                    <span>5</span>
+                                    <span>4</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
+                                    <span>Bathroom:  </span>
+                                    <span>3</span>
                                 </div>
                             </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='vardanfp'><img src="https://housing-images.n7net.in/91aba65c/2c8529ac4424a9e549c68b6ac324110f/v0/fs.jpeg"></img></div>
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gymnasium</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>24X7 Water Supply</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Cycling & Jogging Track</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Car Parking</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Open Air Theatre</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Security Cabin</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Sports</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Badminton Court</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.244570560423!2d77.1845999!3d28.4691088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1fda4863e723%3A0x9721ad1c1c35790f!2sRISLAND%20INDIA!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1832,7 +1635,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1842,31 +1644,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Simana The Urban Oasis</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Western India Mills Compound, G D Ambekar Marg, Parel, Central Mumbai Suburbs, Mumbai</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 3.99 Cr - 10.15 Cr</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://housing-images.n7net.in/012c1500/85799608f0aab6de5d81115599f3941d/v0/fs.jpeg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://housing-images.n7net.in/012c1500/57b2a61a7b8f5f82516122062f7acb06/v0/fs.jpeg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://housing-images.n7net.in/012c1500/a1c7c3b5b914e248ec512f61b30c0404/v0/fs.jpeg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align = "justify">Property for sale in Parel, Mumbai. This project, that is, Simana The Urban Oasis is a well designed project by Bhoomi Group. It is offering Under Construction units. If you are looking at Apartment, you should check out Simana The Urban Oasis. Set in an expanse of 5.38 Acres , the property offers a remarkable lifestyle. Available configurations include 2 BHK, 3 BHK. As per the area plan, units are in the size range of 826.0 - 1133.0 sq.ft.. Project possession is slated for Dec, 2025. There is 2 building in this project. Total number of flats at Simana The Urban Oasis is Tower A -246 Units and Tower B-302 Units. Simana The Urban Oasis is located in Western India Mills Compound, G D Ambekar Marg, Parel, Mumbai</p>
+                             <button onClick={()=>{alert("Emaill : simana@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1877,90 +1679,65 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
+                                    <span>6</span>
+                                </div>
+                                <div className="col-lg-4">
+                                    <span>Bathroom:  </span>
                                     <span>5</span>
                                 </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            </div>  
+                            <pre>   </pre>
+                                <h4>Floor Plan</h4>
+                                <div className='simanafp'><img src="https://housing-images.n7net.in/91aba65c/5ff564a254d907c7313dbe5ea77b25fc/v0/fs.jpeg"></img></div>
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Swimming Pool</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Waiting Lounge</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Car Parking</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Multipurpose Room</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Gymnasium</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>24x7 Security</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Solid Waste Management</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Children's Play Area</span>
                                 </div>
                                 <div className="col-lg-4">
                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3125135678775!2d72.8384746!3d18.9892304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfdba2885c0d%3A0xd56d5d9b844e7dbd!2sSIM%C4%80NA-+The+Urban+Oasis!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -1975,7 +1752,6 @@ function Detail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -1985,31 +1761,31 @@ function Detail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">1 BHK Independent Builder Floor for Rent</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        keelkakttalai, Rajamanickam Nagar, Keelakattalai, Chennai</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 7000/month</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://housing-images.n7net.in/01c16c28/9a705bf847f622ed611600177e73f63f/v0/fs/1_bhk_independent_builder_floor-for-rent-keelakattalai-Chennai-bedroom.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://housing-images.n7net.in/01c16c28/ce16179da8f35b33d940712950021de8/v0/fs/1_bhk_independent_builder_floor-for-rent-keelakattalai-Chennai-bedroom.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://housing-images.n7net.in/01c16c28/267351de7db181e1bfea791f4c4899e5/v0/fs/1_bhk_independent_builder_floor-for-rent-keelakattalai-Chennai-kitchen.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                             <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <p align="justify">Your search for a spacious home at affordable rent in Chennai ends here. The 1 BHK property offers a serene environment with excellent views of the city. This Independent Floor is equipped with the latest lifestyle amenities and all the conveniences at the doorstep. It is semi furnished Independent Floor. This unit is built on floor 1 out of a total 2 floors. The Independent Floor has been thoughtfully designed to meet a family’s space needs, with 1 bedroom. It includes 1 bathroom. There are 1 balcony that lets you enjoy scenic views. The built-up area of this Independent Floor is 600 square feet. The carpet area is 600 square feet. Residents need to pay a monthly rent of Rs 7000. The security deposit payable is Rs 35000.</p>
+                             <button onClick={()=>{alert("Emaill : Nimmadhipropertymanagement@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -2020,38 +1796,10 @@ function Detail() {
                                 </div>
                                 <div className="col-lg-4">
                                     <span>All Rooms: </span>
-                                    <span>5</span>
+                                    <span>2</span>
                                 </div>
                                 <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
+                                    <span>Bathroom:  </span>
                                     <span>1</span>
                                 </div>
                             </div>
@@ -2061,49 +1809,31 @@ function Detail() {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Supply</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Parking</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>CCTV</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Security</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
+                                    <span>Gas Pipeline</span>
+                                </div> 
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.746364868752!2d80.1814161!3d12.9580139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e766abc394b%3A0xf3e778beb973b018!2sRajamanickam%20Nagar%2C%20Keelkattalai%2C%20Chennai%2C%20Tamil%20Nadu%20600117!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>

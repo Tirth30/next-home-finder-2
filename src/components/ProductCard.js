@@ -25,7 +25,6 @@ function ProductCards() {
   const [inputValue, setInputValue] = useState('');
   const [roomsFilter, setRoomsFilter] = useState('');
   const [typeFilter, setTypeFilter] = useState('');
-  const [areaFilter, setAreaFilter] = useState('');
 
   const products = [
     {
@@ -87,7 +86,7 @@ function ProductCards() {
       price: '65 Lakhs',
       city: 'Delhi',
       status: 'sale', 
-      time : 'One Months Ago',
+      time : 'One Month Ago',
       amenities : 'CCTV',
       rooms : '4 BHK',
       type:'apartment',
@@ -113,7 +112,7 @@ function ProductCards() {
       price: '11500/month',
       city: 'Ahmedabad',
       status: 'Rent', 
-      time : 'One Months Ago',
+      time : 'One Month Ago',
       amenities : 'Childrens Play Area, parking , CCTV',
       rooms : '2 BHK',
       type:'flat',
@@ -121,120 +120,120 @@ function ProductCards() {
     },
     {
       id: 8,
-      image: '../img/banner.jpg',
-      title: 'Home 8',
-      price: '45 Lakhs',
-      city: 'Pune',
-      status: 'rent', 
-      time : 'Seven Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'bunglow',
-      area : '90 sq. feet',
+      image: 'https://housing-images.n7net.in/01c16c28/1711011186949_2ee0a8cb5553f5a5a326f61205052b1a/v0/fs/2_bhk_apartment-for-sale-chhatarpur-New+Delhi-bedroom.jpg',
+      title: 'MG Builders Apartments',
+      price: '27 Lakhs',
+      city: 'Delhi',
+      status: 'sale', 
+      time : 'two Months Ago',
+      amenities : 'parking , CCTV',
+      rooms : '2 BHK',
+      type:'apartment',
+      area : '720 sq.ft',
     },
     {
       id: 9,
-      image: '../img/banner.jpg',
-      title: 'Home 9',
-      price: '45 Lakhs',
-      city: 'Jaipur',
+      image: 'https://housing-images.n7net.in/01c16c28/e2382b8d2109b510664249559307bb05/v0/fs/4_bhk_apartment-for-sale-andheri_west-Mumbai-hall.jpg',
+      title: 'Four Bungalows',
+      price: '33 Cr',
+      city: 'Mumbai',
       status: 'sale', 
-      time : 'Eight Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'villa',
-      area : '90 sq. feet',
+      time : 'two Months ago',
+      amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
+      rooms : '4 BHK',
+      type:'bunglow',
+      area : '5000 sq.ft',
     },
     {
       id: 10,
-      image: '../img/banner.jpg',
-      title: 'Home 10',
-      price: '45 Lakhs',
-      city: 'Lucknow',
-      status: 'rent', 
-      time : 'Nine Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'flat',
-      area : '90 sq. feet',
+      image: 'https://imagecdn.99acres.com/media1/24288/0/485760994O-1712908750436.jpg',
+      title: 'Nandanvan Nature Nest',
+      price: '92 Lakhs',
+      city: 'Ahmedabad',
+      status: 'sale', 
+      time : 'One Month Ago ',
+      amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
+      rooms : '4 BHK',
+      type:'farmhouse',
+      area : '',
     },
     {
       id: 11,
-      image: '../img/banner.jpg',
-      title: 'Home 11',
-      price: '45 Lakhs',
-      city: 'Kanpur',
+      image: 'https://housing-images.n7net.in/4f2250e8/cd412475eff8d311de499ebe1a212204/v0/large/corner_house-selaiyur-chennai-ms_builders_chennai.jpeg',
+      title: 'Corner House',
+      price: '64 Lakhs',
+      city: 'Chennai',
       status: 'sale', 
-      time : 'Ten Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'farmhouse',
-      area : '90 sq. feet',
+      time : 'two Months Ago',
+      amenities : 'CCTV',
+      rooms : '2 BHK',
+      type:'flat',
+      area : '887.00 sq.ft',
     },
     {
       id: 12,
-      image: '../img/banner.jpg',
-      title: 'Home 12',
-      price: '45 Lakhs',
-      city: 'Nagpur',
-      status: 'rent', 
-      time : 'Eleven Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'bunglow',
-      area : '90 sq. feet',
+      image: 'https://housing-images.n7net.in/4f2250e8/286723619df6909c2e95f3a01d316122/v0/large/rr_wishtales-jakkur-bengaluru-msr_infraa.jpeg',
+      title: 'RR WishTales',
+      price: '1 Cr',
+      city: 'Bangalore',
+      status: 'sale', 
+      time : 'New Launch',
+      amenities : 'Childrens Play Area, parking , CCTV',
+      rooms : '2 BHK',
+      type:'apartment',
+      area : '1242.00 sq.ft',
     },
     {
       id: 13,
-      image: '../img/banner.jpg',
-      title: 'Home 13',
-      price: '40 Lakhs',
-      city: 'Indore',
+      image: 'https://housing-images.n7net.in/012c1500/28a26ee2bc0fd863c9dd21f78b30c455/v0/fs.jpeg',
+      title: 'Kopren Park View',
+      price: '75 Lakhs',
+      city: 'Ahmedabad',
       status: 'sale', 
-      time : 'One Year Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'villa',
-      area : '90 sq. feet',
+      time : 'New Launch',
+      amenities : 'Childrens Play Area, parking , CCTV',
+      rooms : '3 BHK',
+      type:'apartment',
+      area : '1755 sq.ft',
     },
     {
       id: 14,
-      image: '../img/banner.jpg',
-      title: 'Home 14',
-      price: '27 Lakhs',
-      city: 'Thane',
-      status: 'rent', 
-      time : 'One Year and One Month Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
+      image: 'https://housing-images.n7net.in/4f2250e8/f90b5c9e732376493a56947ace9304de/v0/large/risland_sky_mansion-chhatarpur-delhi-risland_sky_mansion.jpeg',
+      title: 'Risland Sky Mansion',
+      price: '6 Cr',
+      city: 'Delhi',
+      status: 'sale', 
+      time : 'One Month Ago',
+      amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
+      rooms : '3 BHK',
       type:'flat',
-      area : '90 sq. feet',
+      area : '3300.00 sq.ft',
     },
     {
       id: 15,
-      image: '../img/banner.jpg',
-      title: 'Home 15',
-      price: '35 Lakhs',
-      city: 'Bhopal',
+      image: 'https://housing-images.n7net.in/4f2250e8/88a9db77125a0a133730e8c839612b5e/v0/large/simana_the_urban_oasis-parel-mumbai-bhoomi_group.jpg',
+      title: 'Simana The Urban Oasis',
+      price: '10 Cr',
+      city: 'Mumbai',
       status: 'sale', 
-      time : 'One Year and Two Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'farmhouse',
-      area : '90 sq. feet',
+      time : 'two Months Ago',
+      amenities : 'Childrens Play Area, parking , CCTV',
+      rooms : '5 BHK',
+      type:'flat',
+      area : '2104.00 sq.ft',
     },
     {
       id: 16,
-      image: '../img/banner.jpg',
-      title: 'Home 16',
-      price: '45 Lakhs',
-      city: 'Visakhapatnam',
+      image: 'https://housing-images.n7net.in/01c16c28/215c7160ea606652cd5218c2e5bf91b0/v0/large/1_bhk_independent_builder_floor-for-rent-keelakattalai-Chennai-bedroom.jpg',
+      title: '1 BHK for Rent',
+      price: '7000/month',
+      city: 'Chennai',
       status: 'rent', 
-      time : 'One Year and Three Months Ago',
-      amenities : 'garden , parking , gym',
-      rooms : '3bhk',
-      type:'bunglow',
-      area : '90 sq. feet',
+      time : 'One Month Ago',
+      amenities : 'parking , CCTV',
+      rooms : '1 BHK',
+      type:'flat',
+      area : '600 sq.ft',
     },
   ];
   
@@ -257,7 +256,6 @@ function ProductCards() {
     setAmenitiesFilter([]);
     setRoomsFilter('');
     setTypeFilter('');
-    setAreaFilter('');
   };
 
   const filteredProducts = products.filter(product => {
@@ -284,9 +282,8 @@ function ProductCards() {
     const amenitiesCondition = amenitiesFilter.every(amenity => product.amenities.includes(amenity));
     const roomsCondition = roomsFilter ? product.rooms === roomsFilter : true;
     const typeCondition = typeFilter ? product.type === typeFilter : true;
-    const areaCondition = areaFilter ? product.area === areaFilter : true;
     
-    return priceCondition && cityCondition && statusCondition && timeCondition && amenitiesCondition && roomsCondition && typeCondition && areaCondition;
+    return priceCondition && cityCondition && statusCondition && timeCondition && amenitiesCondition && roomsCondition && typeCondition ;
   });
 
   function toggleAmenityFilter(amenity) {
@@ -308,6 +305,9 @@ function ProductCards() {
           <option value="">Select City</option>
           <option value="Ahmedabad">Ahmedabad</option>
           <option value="Mumbai">Mumbai</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Delhi">Delhi</option>
           {/* Add more cities as needed */}
         </select>
         <select value={statusFilter} onChange={e => setStatusFilter(e.target.value)}>
@@ -349,7 +349,7 @@ function ProductCards() {
           <option value="5 BHK">5 BHK</option>
           {/* Add more room options as needed */}
         </select>
-        <pre>               </pre>
+        <pre>                                     </pre>
         <div>
         <select value={typeFilter} onChange={e => setTypeFilter(e.target.value)}>
           <option value="">All Types</option>
@@ -361,13 +361,7 @@ function ProductCards() {
           {/* Add more type options as needed */}
         </select>
         </div>
-        <pre>               </pre>
         <div>
-        <select value={areaFilter} onChange={e => setAreaFilter(e.target.value)}>
-          <option value="">Select Area</option>
-          <option value="50 sq.ft">50 sq.ft</option>
-          {/* Add more options as needed */}
-        </select>
         </div>
         </div>
         <button onClick={handleApplyFilter}>Apply Filter</button>

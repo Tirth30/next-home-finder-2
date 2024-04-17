@@ -978,3 +978,22 @@ input[type='number'] {
   height: auto;
   width: auto;
 }
+ .mg{
+  height: 280px;
+  width: 90%;
+  margin-left: 20px;
+ }
+
+ .fb{
+  margin: 20px;
+  height: 280px;
+  width:90%
+ }
+ .fbfp{
+  margin:0px;
+ }
+ .simanafp{
+  margin: 0px;
+  height: 50%;
+  width: 40%;
+ }

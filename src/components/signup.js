@@ -9,7 +9,6 @@ const Signup = () => {
 
   const handleSignup = (event) => {
     event.preventDefault();
-    // Implement signup logic here (e.g., API call)
     if (password !== confirmPassword) {
       alert('Passwords do not match!');
       return;
