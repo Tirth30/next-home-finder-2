@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Use an official Node runtime as a parent image
 FROM node:15.0.0-alpine3.12
 
@@ -29,3 +30,11 @@ CMD ["serve", "-s", "build", "-l", "3000"]
 
 # Expose the port the app runs on
 EXPOSE 3000
+=======
+FROM node:15.0.0-alpine3.12
+WORKDIR /app
+COPY package*.json .
+RUN npm install
+COPY . .
+CMD [ "sh", "-c", "export NODE_OPTIONS=--openssl-legacy-provider && npm start" ]
+>>>>>>> 5e5f3cfe5a7a9574f2c3c07695fa8e2025437f65
