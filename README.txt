@@ -25,5 +25,8 @@ Docker-compose RUN commands
 1 -> git clone https://github.com/Tirth30/next-home-finder-2.git
 2 -> docker-compose up
 3 -> open chrome and search : localhost:7000
+ ---------------------
+jenkins done 
+-----------------
 
  
