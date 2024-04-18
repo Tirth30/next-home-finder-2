@@ -15,8 +15,8 @@ STEPS TO RUN PROJECT
 Dockerfile RUN commands 
 ----------------------------------------------------------------------------
 1 -> git clone https://github.com/Tirth30/next-home-finder-2.git
-2 -> docker build -t next-home-finder .
-3 -> docker run --name next-home-finder-website -p 5000:3000 next-home-finder
+2 -> docker build -t frontend .
+3 -> docker run  -p 5000:3000 frontend
 4-> open chrome and search : localhost:5000
 
 
