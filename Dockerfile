@@ -1,40 +1,26 @@
-<<<<<<< HEAD
-# Use an official Node runtime as a parent image
-FROM node:15.0.0-alpine3.12
+# Use an official Node.js runtime as the base image
+FROM node:14-alpine
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the package.json and package-lock.json (if available)
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
-<<<<<<< HEAD
 
 # Install dependencies
-# Note: Using npm ci instead of npm install to ensure that package-lock.json is used
-RUN npm ci --only=production
+RUN npm install
 
-# Copy the rest of your app's source code
-=======
-RUN npm install --force
->>>>>>> 09d4e2838df85d27da15af9e9dcb09527b8fa00e
+# Copy the rest of the application code to the working directory
 COPY . .
 
 # Build the React app
 RUN npm run build
 
-# Install serve to run the application
+# Serve the React app using serve
 RUN npm install -g serve
 
-# Command to serve the app on container startup
-CMD ["serve", "-s", "build", "-l", "3000"]
-
-# Expose the port the app runs on
+# Expose the port on which the app will run
 EXPOSE 3000
-=======
-FROM node:15.0.0-alpine3.12
-WORKDIR /app
-COPY package*.json .
-RUN npm install
-COPY . .
-CMD [ "sh", "-c", "export NODE_OPTIONS=--openssl-legacy-provider && npm start" ]
->>>>>>> 5e5f3cfe5a7a9574f2c3c07695fa8e2025437f65
+
+# Command to run the React app
+CMD ["serve", "-s", "build"]
