@@ -20,6 +20,8 @@ import BunglowDetail from './components/BunglowsDetail';
 import VillaDetail from './components/VillaDetail';
 import PGDetail from './components/PGDetail';
 import Signup from './components/signup';
+//import AddProducts from './components/addproperty'; // Import AddProducts only once
+
 
 function App() {
   return (
@@ -55,6 +57,7 @@ function AppContent() {
         <Route path="/Bunglows" component={Bunglows}></Route>
         <Route path="/Villas" component={Villas}></Route>
         <Route path="/PG" component={PG}></Route>
+       
       </Switch>
       {!isLoginPage && !isDetailPage && !isSignupPage &&<Footer />}
     </div>

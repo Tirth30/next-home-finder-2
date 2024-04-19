@@ -1,38 +1,34 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import { BiSolidShow, BiSolidHide } from "react-icons/bi";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase.config'; // Ensure correct import path
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
   const history = useHistory();
 
-  const handleLogin = (event) => {
+  const signin = async (event) => {
     event.preventDefault();
-
-    if (!email || !password) {
-      setError('Please enter both email and password.');
-      return;
+    setLoading(true);
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      console.log(user);
+      setLoading(false);
+      alert('Successfully logged in');
+      history.push('/home');
+    } catch (error) {
+      setLoading(false);
+      alert(error.message);
     }
-
-    console.log('Login details:', email, password);
-
-    // Redirect to home page after successful login
-    history.push('/home');
-  };
-
-  const handleShowPassword = () => {
-    setShowPassword(!showPassword);
   };
 
   return (
     <div className="login-form mt">
       <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        {error && <p className="error">{error}</p>}
+      <form className="auth_from" onSubmit={signin}>
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -43,20 +39,15 @@ const Login = () => {
           required
         />
         <label htmlFor="password">Password:</label>
-        <div className="password-container">
-          <input
-            type={showPassword ? 'text' : 'password'}
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder='Enter Your Password'
-            required
-          />
-          <span className="password-toggle" onClick={handleShowPassword}>
-            {showPassword ? <BiSolidHide /> : <BiSolidShow />}
-          </span>
-        </div>
-        <button type='submit'>Login</button>
+        <input
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder='Enter Your Password'
+          required
+        />
+        <button type="submit" disabled={loading}>Login</button>
       </form>
       <p className='mt-10'>
         Don't have an account? <Link to="/signup">Sign Up</Link>
@@ -64,4 +55,5 @@ const Login = () => {
     </div>
   );
 };
+
 export default Login;
