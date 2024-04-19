@@ -1,11 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function PGDetail() {
   let { id } = useParams();
 
-  // Conditionally render different content based on the id
   let detailContent = '';
   if (id === '1') {
     detailContent = <div className="flat-detail">
@@ -14,7 +12,6 @@ function PGDetail() {
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -24,125 +21,72 @@ function PGDetail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Vinayak PG</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Vinayak PG, Makarba, Ahmedabad</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 8,000/Month</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2024/Apr/16/full_photo/GR2-426735-2105525.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2024/Apr/16/full_photo/GR2-426735-2105527.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2024/Apr/16/full_photo/GR2-426735-2105523.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <p align = "justify">Move into Vinayak PG, a professionally managed PG home in the Makarba, Ahmedabad. Located in a safe neighborhood, this female PG offers various modern amenities for your comfort, such as AC, Food, Wi-Fi etc. This PG has two, triple, four, other occupancy types. This PG is nearby major commercial and educational hubs. Please contact the seller to book this fast selling high in demand PG stay.</p>
+                              <button onClick={()=>{alert("Emaill : VinayakPG@gmailcom \nMobile No:123456789")}}>Contact</button>  
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Wifi</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Room Cleaning Service</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Fridge</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Laundry</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Cooler RO</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Warden</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Meals provided <sub>Veg Only</sub></span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15105200.564429!2d37.91245092855647!3d38.99130948591772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2zVMO8cmtpeWU!5e0!3m2!1str!2str!4v1630158674074!5m2!1str!2str" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.422627417388!2d72.3713603!3d23.001597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bdb04d1757f%3A0x62d72ba1fc1ac32e!2sVinayak%20pg%20services!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -151,14 +95,13 @@ function PGDetail() {
     </div>
 </div>;
   } 
-  else if (id == '2'){
-    detailContent =  detailContent = <div className="flat-detail">
+  else if (id === '2') {
+    detailContent = <div className="flat-detail">
     <div className="page-top">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -168,125 +111,80 @@ function PGDetail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Anil PG</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Anil PG, Powai, Mumbai</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 9,000/Month</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2022/Jan/24/full_photo/GR2-266619-1247713.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2022/Jan/24/full_photo/GR2-266619-1247711.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2022/Jan/24/full_photo/GR2-266619-1247699.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <p align = "justify">Move into Anil, a professionally managed PG home in Powai, Mumbai. Located in a safe neighborhood, this unisex PG offers various modern amenities for your comfort, such as TV, AC, Food, Power Backup, Wi-Fi etc. This PG has single, double, triple occupancy types. This PG is nearby major commercial and educational hubs. Please contact the seller to book this fast selling high in demand PG stay.</p>
+                              <button onClick={()=>{alert("Emaill : AnilPG@gmailcom \nMobile No:123456789")}}>Contact</button>  
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Wifi</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Power Backup</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Room Cleaning Service</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Laundry</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Water Cooler RO</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Warden</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Meals provided <sub>Veg & Non-Veg</sub></span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>TV</span>
                                 </div>
                                 <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <i className="fa fa-check" ></i>
+                                    <span>Microwave</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15105200.564429!2d37.91245092855647!3d38.99130948591772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2zVMO8cmtpeWU!5e0!3m2!1str!2str!4v1630158674074!5m2!1str!2str" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.212726991757!2d72.3582841!3d22.9969654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e99dc3fb5e747%3A0xa6d396fb6ec869ec!2sAnil%20PG!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -294,14 +192,14 @@ function PGDetail() {
         </div>
     </div>
 </div>;
-  }else if (id == '3'){
+  } 
+  else if (id === '3') {
     detailContent = <div className="flat-detail">
     <div className="page-top">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -311,125 +209,80 @@ function PGDetail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Nehru Place - 50 for Girls</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Nehru Place - 50 for Girls, Nehru Place, New Delhi</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 32,500/Month</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/Dec/22/full_photo/GR2-379959-1983585.jpg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/Dec/22/full_photo/GR2-379959-1983593.jpg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/Dec/22/full_photo/GR2-379959-1983591.jpg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <p align = "justify">Move into Nehru Place - 50, a professionally managed PG home in Nehru Place, New Delhi. Located in a safe neighborhood, this unisex PG offers various modern amenities for your comfort, such as TV, AC, Food, Power Backup, Wi-Fi, etc. This PG has Single and Double Occupancy types. This PG is near major commercial and educational hubs. Please get in touch with the seller to book this fast selling high in demand PG stay.</p>
+                              <button onClick={()=>{alert("Emaill : NehruPG@gmailcom \nMobile No:123456789")}}>Contact</button>  
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Wifi</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Power Backup</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Room Cleaning Service</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Laundry</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Lift</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Warden</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Meals provided <sub>Veg Only</sub></span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>TV</span>
                                 </div>
                                 <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <i className="fa fa-check" ></i>
+                                    <span>Microwave</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.787765670948!2d77.2488515!3d28.5493045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4e1fcd4decd%3A0x4a8f9061cd46d2a7!2sNehru%20Place%20-%2050%20for%20Girls%2C%20Nehru%20Place%2C%20New%20Delhi!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -437,14 +290,13 @@ function PGDetail() {
         </div>
     </div>
 </div>;
-  }else if(id == '4'){
+  } else if (id === '4') {
     detailContent = <div className="flat-detail">
     <div className="page-top">
         <div className="container">
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </div>
@@ -454,706 +306,90 @@ function PGDetail() {
             <div className="col-lg-12">
                 <div className="fd-top flat-detail-content">
                     <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
+                        <h3 className="flat-detail-title">Mishra PG/Hostels</h3>
                         <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
+                        Mishra PG, J P Nagar, Bangalore</p>
                     </div>
                     <div>
-                        <span className="fd-price">$650</span>
+                        <span className="fd-price">₹ 6,000/Month</span>
                     </div>
                 </div>
                 <div class="row">
                    <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
+                      <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2024/Apr/07/full_photo/GR2-433857-2096385.jpeg' alt="Snow"></img>
                    </div>
                   <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
+                        <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2024/Apr/07/full_photo/GR2-433857-2096371.jpeg' alt="Forest"></img>
                   </div>
                   <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
+                         <img className="detail-img" src='https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2024/Apr/07/full_photo/GR2-433857-2096381.jpeg' alt="Mountains"></img>
                   </div>
                   </div>
                 <div className="row">
                     <div className="col-lg-8">
                         <div className="fd-item">
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
+                            <p align = "justify">Move into Mishra PG, a professionally managed PG home in the JP Nagar, Bangalore. Located in a safe neighborhood, this unisex PG offers various modern amenities for your comfort, such as TV, AC, Food, Power Backup, Wi-Fi etc. This PG has single, double, triple occupancy types. This PG is nearby major commercial and educational hubs. Please contact the seller to book this fast selling high in demand PG stay.</p>
+                              <button onClick={()=>{alert("Emaill : MishraPG@gmailcom \nMobile No:123456789")}}>Contact</button>  
                         </div>
                         <div className="fd-item fd-features">
                             <h4>Features</h4>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Wifi</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Power Backup</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Room Cleaning Service</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Laundry</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Lift</span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Warden</span>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>Meals provided <sub>Veg Only & Non-Veg</sub></span>
                                 </div>
                                 <div className="col-lg-4">
                                     <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <span>TV</span>
                                 </div>
                                 <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
+                                    <i className="fa fa-check" ></i>
+                                    <span>Microwave</span>
                                 </div>
                             </div>
                         </div>
                         <div className="fd-item">
                             <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4215563161966!2d77.5738657!3d12.9045274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae156c0a2a5733%3A0x10de94b25cb7e697!2sJP%20Nagar%20PG!5e0!3m2!1sen!2sin!4v1649954374233" width="100%" height="450" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>; 
-}else if(id == '5'){
-    detailContent = <div className="flat-detail">
-    <div className="page-top">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="container mt-5 mb-5">
-        <div className="row">
-            <div className="col-lg-12">
-                <div className="fd-top flat-detail-content">
-                    <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
-                        <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div>
-                        <span className="fd-price">$650</span>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
-                   </div>
-                  <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
-                  </div>
-                  <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
-                  </div>
-                  </div>
-                <div className="row">
-                    <div className="col-lg-8">
-                        <div className="fd-item">
-                            <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item fd-features">
-                            <h4>Features</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item">
-                            <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>; 
-}else if(id == '6'){
-    detailContent = <div className="flat-detail">
-    <div className="page-top">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="container mt-5 mb-5">
-        <div className="row">
-            <div className="col-lg-12">
-                <div className="fd-top flat-detail-content">
-                    <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
-                        <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div>
-                        <span className="fd-price">$650</span>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
-                   </div>
-                  <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
-                  </div>
-                  <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
-                  </div>
-                  </div>
-                <div className="row">
-                    <div className="col-lg-8">
-                        <div className="fd-item">
-                            <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item fd-features">
-                            <h4>Features</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item">
-                            <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>; 
-}else if(id == '7'){
-    detailContent = <div className="flat-detail">
-    <div className="page-top">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="container mt-5 mb-5">
-        <div className="row">
-            <div className="col-lg-12">
-                <div className="fd-top flat-detail-content">
-                    <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
-                        <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div>
-                        <span className="fd-price">$650</span>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
-                   </div>
-                  <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
-                  </div>
-                  <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
-                  </div>
-                  </div>
-                <div className="row">
-                    <div className="col-lg-8">
-                        <div className="fd-item">
-                            <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item fd-features">
-                            <h4>Features</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item">
-                            <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>; 
-}else if(id == '8'){
-    detailContent = <div className="flat-detail">
-    <div className="page-top">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12">
-                    <h1 className="page-title">DETAIL</h1>
-                    <h2 className="page-description">Lorem ipsum dolor sit amet</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div className="container mt-5 mb-5">
-        <div className="row">
-            <div className="col-lg-12">
-                <div className="fd-top flat-detail-content">
-                    <div>
-                        <h3 className="flat-detail-title">Lorem ipsum dolor sit amet.</h3>
-                        <p className="fd-address"> <i className="fas fa-map-marker-alt"></i>
-                        Lorem ipsum dolor sit amet</p>
-                    </div>
-                    <div>
-                        <span className="fd-price">$650</span>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="column">
-                      <img className="detail-img" src='../img/banner.jpg' alt="Snow"></img>
-                   </div>
-                  <div class="column">
-                        <img className="detail-img" src='../img/banner.jpg' alt="Forest"></img>
-                  </div>
-                  <div class="column">
-                         <img className="detail-img" src='../img/banner.jpg' alt="Mountains"></img>
-                  </div>
-                  </div>
-                <div className="row">
-                    <div className="col-lg-8">
-                        <div className="fd-item">
-                            <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                              <button onClick={()=>{alert("Emaill : NextHomeFinder@gmailcom \nMobile No:123456789")}}>Contact</button>  
-                        </div>
-                        <div className="fd-item fd-property-detail">
-                            <h4>Property Details</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <span>Kitchen: </span>
-                                    <span>1</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>All Rooms: </span>
-                                    <span>5</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <span>Kitchen:  </span>
-                                    <span>1</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item fd-features">
-                            <h4>Features</h4>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check"></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                    <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                                <div className="col-lg-4">
-                                   <i className="fa fa-check" ></i>
-                                    <span>Lorem Ipsum</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="fd-item">
-                            <h4>Maps</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7555.136728496143!2d72.5935452689274!3d23.10152285225798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c845233e29%3A0x231201e985a63c9f!2sD-Mart!5e0" width="100%" height="450" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>; 
-}
-  return (
+</div>;
+  } 
+
+return (
     <div>
       {detailContent}
     </div>

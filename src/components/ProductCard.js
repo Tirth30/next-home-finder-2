@@ -125,7 +125,7 @@ function ProductCards() {
       price: '27 Lakhs',
       city: 'Delhi',
       status: 'sale', 
-      time : 'two Months Ago',
+      time : 'Two Months Ago',
       amenities : 'parking , CCTV',
       rooms : '2 BHK',
       type:'apartment',
@@ -138,7 +138,7 @@ function ProductCards() {
       price: '33 Cr',
       city: 'Mumbai',
       status: 'sale', 
-      time : 'two Months ago',
+      time : 'Two Months ago',
       amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
       rooms : '4 BHK',
       type:'bunglow',
@@ -151,7 +151,7 @@ function ProductCards() {
       price: '92 Lakhs',
       city: 'Ahmedabad',
       status: 'sale', 
-      time : 'One Month Ago ',
+      time : 'One Month Ago',
       amenities : 'Childrens Play Area, parking , CCTV , Solar Lighting',
       rooms : '4 BHK',
       type:'farmhouse',
@@ -164,7 +164,7 @@ function ProductCards() {
       price: '64 Lakhs',
       city: 'Chennai',
       status: 'sale', 
-      time : 'two Months Ago',
+      time : 'Two Months Ago',
       amenities : 'CCTV',
       rooms : '2 BHK',
       type:'flat',
@@ -216,7 +216,7 @@ function ProductCards() {
       price: '10 Cr',
       city: 'Mumbai',
       status: 'sale', 
-      time : 'two Months Ago',
+      time : 'Two Months Ago',
       amenities : 'Childrens Play Area, parking , CCTV',
       rooms : '5 BHK',
       type:'flat',
@@ -319,6 +319,7 @@ function ProductCards() {
           <option value="">All Times</option>
           <option value="New Launch">New Launch</option>
           <option value="One Month Ago">One Month Ago</option>
+          <option value="Two Months Ago">Two Months Ago</option>
           {/* Add more time options as needed */}
         </select>
         {/* Checkbox for amenities */}
@@ -340,6 +341,7 @@ function ProductCards() {
             <input type="checkbox" value="Childrens Play Area" checked={amenitiesFilter.includes("Childrens Play Area")} onChange={e => toggleAmenityFilter(e.target.value)} />
             Childrens Play Area
           </label>
+          <pre>    </pre>
           <select value={roomsFilter} onChange={e => setRoomsFilter(e.target.value)}>
           <option value="">All Rooms</option>
           <option value="1 BHK">1 BHK</option>
