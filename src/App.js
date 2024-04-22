@@ -10,6 +10,7 @@ import Login from "./components/Login";
 import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import Detail from './components/Detail';
 import Contacts from './components/Contacts';
+import ContactsAdd from "./components/ContactsAdd";
 import Liked from './components/Liked';
 import Flats from './components/Flats';
 import Bunglows from './components/Bunglows';
@@ -57,7 +58,7 @@ function AppContent() {
         <Route path="/Bunglows" component={Bunglows}></Route>
         <Route path="/Villas" component={Villas}></Route>
         <Route path="/PG" component={PG}></Route>
-       
+        <Route path="/contactAdd" component={ContactsAdd}></Route>
       </Switch>
       {!isLoginPage && !isDetailPage && !isSignupPage &&<Footer />}
     </div>

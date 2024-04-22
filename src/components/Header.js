@@ -44,6 +44,9 @@ const Header = () => {
                                         <li><Link to='/PG'>PG</Link></li>
                                     </ul>
                                 </li>
+                                <li className="nav-item">
+                                    <Link  className="nav-link" to="/">Log out</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
