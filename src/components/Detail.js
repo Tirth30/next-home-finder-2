@@ -1,8 +1,30 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import axios from "axios";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function Detail() {
   let { id } = useParams();
+  let history = useHistory();
+  const redirectData = (data) => {
+    history.push("/contactAdd", { state: data });
+  };
+  const addIdToDatabaseEntry = async (id) => {
+    try {
+      const databaseUrl =
+        "https://next-home-finder-5de1b-default-rtdb.firebaseio.com/contect.json";
+
+      const newId = id;
+
+      // Send PATCH request to update the entry wit the new ID
+      await axios.post(databaseUrl, newId);
+      history.push("/Contacts");
+      console.log("ID added successfully!");
+    } catch (error) {
+      console.error("Error adding ID:", error);
+    }
+  };
+
 
   // Conditionally render different content based on the id
   let detailContent = '';
@@ -46,7 +68,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Vardan Sky is a project by Vardan Developers in Ahmedabad. It is a Under Construction project. Vardan Sky offers some of the most conveniently designed apartments. Located in Vastral, it is a residential project. The project is spread over 1.62 Acres . It has 228 units. here are 6 buildings in this project. Vardan Sky offers some of the most exclusive 2 BHK, 3 BHK. As per the area plan, units are in the size range of 1377.0 - 1782.0 sq.ft.. Launched in April 2022, Vardan Sky is slated for POSSESSION AUGUST, 2024. The address of Vardan Sky is Madhav Farm Road, Near Shyamaji Farm, SP Ring Road, Vastral.</p>
-                            <button onClick={()=>{alert("Emaill : VardanSky@gmailcom \nMobile No : 123456789")}}>Contact</button>
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(2);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
