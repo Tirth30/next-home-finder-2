@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../firebase.config';
 
@@ -9,6 +10,7 @@ const SignupForm = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const history = useHistory(); // Import useHistory hook
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -25,15 +27,19 @@ const SignupForm = () => {
 
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-      console.log('Signup successful!', user);
+      alert('Signup successful!');
 
       setName('');
       setEmail('');
       setPassword('');
       setConfirmPassword('');
+      
+      // Redirect to login page after successful signup
+      history.push("/"); // Redirect to your login page route
     } catch (error) {
       console.error('Signup error:', error.message);
-      // Display error message to user - You may replace this with an error component in your UI
+      // Display error message to user using alert
+      alert(error.message);
     }
 
     setLoading(false);
