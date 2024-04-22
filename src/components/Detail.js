@@ -70,7 +70,7 @@ function Detail() {
                             <p align="justify">Vardan Sky is a project by Vardan Developers in Ahmedabad. It is a Under Construction project. Vardan Sky offers some of the most conveniently designed apartments. Located in Vastral, it is a residential project. The project is spread over 1.62 Acres . It has 228 units. here are 6 buildings in this project. Vardan Sky offers some of the most exclusive 2 BHK, 3 BHK. As per the area plan, units are in the size range of 1377.0 - 1782.0 sq.ft.. Launched in April 2022, Vardan Sky is slated for POSSESSION AUGUST, 2024. The address of Vardan Sky is Madhav Farm Road, Near Shyamaji Farm, SP Ring Road, Vastral.</p>
                             <button
                       onClick={() => {
-                        addIdToDatabaseEntry(2);
+                        addIdToDatabaseEntry(1);
                       }}
                     >
                       Contact
@@ -192,7 +192,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align = "justify">Looking for Villa in Pudupakkam, Chennai?. Pacifica Aurum Villas Phase 2 is a project by Pacifica Companies. The project is offering 4 BHK, 5 BHK. It is set in 140 Acres . Pacifica Aurum Villas Phase 2 is a Under Construction residential project. There is 1 building in this project. As per the area plan, units are in the size range of 2185.0 - 3812.0 sq.ft.. Pacifica Aurum Villas Phase 2 is located in Pudupakkam. Pacifica Aurum Villas Phase 2 was launched in Jan 2022.Pacifica Aurum Villas Phase 2 offers a host of facilities for residents. This includes Reserved Parking, Gymnasium, RO Water System, Power Backup. For families with kids, there is Children's Play Area, nearby apart from Swimming Pool. Sportsies can use Cricket Pitch, Squash Court, Skating Rink, Basketball Court, Badminton Court, Cycling & Jogging Track. All residents have access to Library, Internet / Wi-Fi, Conference Room, provisions in the project. Other provisions include access to Business Center, Banquet Hall, Party Hall, Landscaping & Tree Planting, Sewage Treatment Plant, Water Storage, Multipurpose Room, Maintenance Staff, The property is has Fire Sprinklers. There is 24x7 Security. It is a Gated Community. There is provision for Visitor Parking. These amenities in Pacifica Aurum Villas Phase 2 are those that every homebuyer aspires for!.</p>
-                             <button onClick={()=>{alert("Emaill : Pacific@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(2);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -309,7 +315,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Available residential Flay fot Rent in a prime location of wadala east.Wadala road railway station & monorail rail way station is just few minutes away.This complex is blessed with cold breeze, Natural sunlight, Greenery etc. This complex is designed by well renowned architects around the world. This complex has good connectivity with shops, Markets, Hospitals, Schools and Colleges etc. If interested contact us for more details.</p>
-                             <button onClick={()=>{alert("Emaill : bhaktipark@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(3);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -423,7 +435,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">VBHC Springwater is an exclusive community in Palghar, with an exquisite 1&2 BHK Waterview Residences with large balconies offers you comfort. Get access to Palghar’s largest clubhouse that will help you recharge and feel right at home from Day 1, at an unmatched location that invites you to make it your own dream home.</p>
-                             <button onClick={()=>{alert("Emaill : VBHC@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(4);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -541,7 +559,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Krishna Affordable Homes is a residential project in Dwarka Mor, New Delhi. Krishna Affordable Homes offers Apartment. Available configurations include 2 BHK, 3 BHK, 4 BHK. Apartment, as per the area plan, are in the size range of 550.0 - 1500.0 sq.ft.. The property is Ready to Move. Krishna Affordable Homes is located in Dwarka Mor. The project is developed by Krishna Associates.Krishna Affordable Homes is equipped with various resident-centric amenities that includes Power Backup. It is an Earthquake Resistant Structure. Enjoy a class-apart lifestyle at Krishna Affordable Homes.</p>
-                             <button onClick={()=>{alert("Emaill : Krishnahomes77@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(5);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -644,7 +668,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Welcome to Sanzio, where lush greenery meets luxurious living. Enjoy peace in our elegant homes amidst the city's bustle. Find daily serenity in our modern, stylish living spaces that blend your soul with with Sanzio's style.</p>
-                             <button onClick={()=>{alert("Emaill : JrcSanzio@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(6);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -761,7 +791,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align ="justify">If you are looking for a modern house on rent in Ahmedabad, this Flat in Ranip can be your perfect home. It is a 2 BHK Flat designed to meet your space and lifestyle needs. The 2 BHK unit is semi furnished. This rented 2 BHK property is spacious and well-designed, with access to all the conveniences for any modern home seeker. It is located on floor 13 out of a total 14 floors. The Flat has 2 bedrooms and 2 bathroom. It also has 1 balcony, giving uninterrupted views of the surroundings. There is lush greenery around this Flat. It is a East facing Flat designed as per Vastu principles. The carpet area of this unit is 1062.0 square_feet. The built-up area is 1100 square_feet. The monthly rent payable for this Flat is Rs 11500. The security deposit is Rs 23000.</p>
-                             <button onClick={()=>{alert("Emaill : Mukesh@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(7);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -892,7 +928,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align ="justify">Looking for a 2 BHK Flat for sale in Delhi? Your search ends here. Buy this 2 BHK property in Delhi's finest location, Chhatarpur. It is on floor 1 out of 5 floors. This Flat is available at a reasonable price of Rs 27.0 L. The built up area of this property is 720 Square feet. It is spacious for a family and this property has a carpet area of 710 Square feet. There are 2 bedrooms and 2 bathroom.</p>
-                             <button onClick={()=>{alert("Emaill : MGbuilders@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(8);
+                      }}
+                    >
+                      Contact
+                    </button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -995,7 +1037,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">A 4 BHK Flat for sale in Andheri West, Mumbai. This beautifully designed 4 BHK unit with all the modern-day comforts is one of Andheri West's most desired properties. Contact now for more information. This 4 BHK unit is on floor 22. There are 22 floors in this property. The price of this Flat is Rs 33.0 Cr. Each unit has a built-up area of 5000 square_feet. The carpet area is 3800 square_feet. This West-facing property has an excellent view. There are 4 bedrooms. There is provision for 4 bathroom. This property is also equipped with a servant room. The Flat in Andheri West, Mumbai has lift facility. It is a thoroughly secure premise with cctv facility. Other facilities include provisions for Gym, Garden, Sports facility, Swimming pool, Intercom, Community hall. This property also enjoys power backup facility. Regular water supply is available in this property. Kids have access to a dedicated kids area. This is a gated community. It is also close to RichFeel Trichology Center, Dr. Pareek's Deafness clinic and ENT Centre, Health Reactive I Cancer care treatment I Immunity booster</p>
-                             <button onClick={()=>{alert("Emaill : fourbunglows@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(9);
+                      }}
+                    >
+                      Contact
+                    </button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1114,7 +1162,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Fully developed lush green lawn and garden in our compound. Semi furnished. Modular kitchen, two beds, a/c. 24 hours water availability. It is a weekend villa, very well developed community. Very well managed. Have club house, gym, open air theater, swimming pool, mini theater, indoor games, 3 gardens, on the banks of mashwo river, have river front developed. Lots of trees, full of nature, rcc roads inside, lights, full time watchmen and night patrolling, lots of birds and animals.</p>
-                             <button onClick={()=>{alert("Emaill : farmhouse@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(10);
+                      }}
+                    >
+                      Contact
+                    </button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1228,7 +1282,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">MS Builders Chennai has lauched MS Corner House in Selaiyur, Chennai. The address of MS MS Corner House is Tambaram, Chennai South.Own a home in MS MS Corner House today!.This project has been developed by MS Builders Chennai.Selaiyur is well-connected to other parts of city by road, which passes through the heart of this suburb. Prominent shopping malls, movie theatres, school, and hospitals are present in proximity of this residential project.</p>
-                             <button onClick={()=>{alert("Emaill : CornerHouse@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                        <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(11);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1345,7 +1405,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">RR WishTales: 2,3,4 BHK boutique luxury homes for your dream! Where hearts & beauty unite. Here, you experience a home immersed in a world of innovative design and meticulous planning. As privacy and Vaastu as our core priorities we strive to provide you with an uncompromised living experience. Every detail is thoughtfully curated to harmonize aesthetics, functionality, and comfortable living. Here you will discover a home built with precision and passion, where every aspect of it holds a promise of lasting strength and unwavering durability. Located in prime of North Bengaluru Get ready to experience a lifestyle beyond compare, where comfort and sophistication intertwine to create an unparalleled haven of luxe. Our team believes in abundant spaces and uncompromised aesthetics, thereby delivering you a home of ample space. Enjoy your everyday adorned with premium specifications resulting in a life of unparalleled comfort. A home is where every moment unfolds into a symphony of happiness. WishTales is a haven of joy and opulence! Here the art of living finds its truest form. It is a carefully curated masterpiece where finesse and perfection converge in harmony.</p>
-                             <button onClick={()=>{alert("Emaill : RR142@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(12);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1462,7 +1528,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Kopren Park View is a project by Shoolin Developers in Ahmedabad. It is a Under Construction project. Kopren Park View offers some of the most conveniently designed Apartment. Located in Ognaj, it is a residential project. The project is spread over 0.92 Acres . It has 136 units. There are 4 buildings in this project. Kopren Park View offers some of the most exclusive 2 BHK, 3 BHK. As per the area plan, units are in the size range of 142.0 - 195.0 sq.yd.. Launched in October 2022, Kopren Park View is slated for possession in Dec, 2024. The address of Kopren Park View is Science City Approach Road,Ognaj Bypass Road.</p>
-                             <button onClick={()=>{alert("Emaill : Kopren@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(13);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1579,7 +1651,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Sky Mansion, an exemplary benchmark of Luxury Living in the heart of South Delhi, stands as the first 100 meter sky scrapper in the area. One of India’s most Premium Projects with beautifully crafted 3 & 4 Bedrooms and Exclusive Penthouses having uninterrupted view of Chattarpur & Aravalli Greens.</p>
-                             <button onClick={()=>{alert("Emaill : rislandskymansion@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(14);
+                      }}
+                    >
+                      Contact
+                    </button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1696,7 +1774,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align = "justify">Property for sale in Parel, Mumbai. This project, that is, Simana The Urban Oasis is a well designed project by Bhoomi Group. It is offering Under Construction units. If you are looking at Apartment, you should check out Simana The Urban Oasis. Set in an expanse of 5.38 Acres , the property offers a remarkable lifestyle. Available configurations include 2 BHK, 3 BHK. As per the area plan, units are in the size range of 826.0 - 1133.0 sq.ft.. Project possession is slated for Dec, 2025. There is 2 building in this project. Total number of flats at Simana The Urban Oasis is Tower A -246 Units and Tower B-302 Units. Simana The Urban Oasis is located in Western India Mills Compound, G D Ambekar Marg, Parel, Mumbai</p>
-                             <button onClick={()=>{alert("Emaill : simana@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(15);
+                      }}
+                    >
+                      Contact
+                    </button>
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>
@@ -1813,7 +1897,13 @@ function Detail() {
                         <div className="fd-item">
                             <h4>Description</h4>
                             <p align="justify">Your search for a spacious home at affordable rent in Chennai ends here. The 1 BHK property offers a serene environment with excellent views of the city. This Independent Floor is equipped with the latest lifestyle amenities and all the conveniences at the doorstep. It is semi furnished Independent Floor. This unit is built on floor 1 out of a total 2 floors. The Independent Floor has been thoughtfully designed to meet a family’s space needs, with 1 bedroom. It includes 1 bathroom. There are 1 balcony that lets you enjoy scenic views. The built-up area of this Independent Floor is 600 square feet. The carpet area is 600 square feet. Residents need to pay a monthly rent of Rs 7000. The security deposit payable is Rs 35000.</p>
-                             <button onClick={()=>{alert("Emaill : Nimmadhipropertymanagement@gmailcom \nMobile No:123456789")}}>Contact</button> 
+                            <button
+                      onClick={() => {
+                        addIdToDatabaseEntry(16);
+                      }}
+                    >
+                      Contact
+                    </button>     <button onClick={()=>{alert("Emaill : Nimmadhipropertymanagement@gmailcom \nMobile No:123456789")}}>Contact</button> 
                         </div>
                         <div className="fd-item fd-property-detail">
                             <h4>Property Details</h4>

@@ -313,6 +313,7 @@ function ContactsAdd() {
             {" "}
             {/* Pass the id as a parameter to the detail page route */}
             <button>View Details</button>
+            
           </Link>
           <BsFillHouseHeartFill
             className="like"
