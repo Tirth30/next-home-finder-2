@@ -39,7 +39,7 @@ const SignupForm = () => {
     } catch (error) {
       console.error('Signup error:', error.message);
       // Display error message to user using alert
-      alert(error.message);
+      alert('Email Already in use ! ');
     }
 
     setLoading(false);

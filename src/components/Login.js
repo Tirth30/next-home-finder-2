@@ -21,7 +21,7 @@ const Login = () => {
       history.push('/home');
     } catch (error) {
       setLoading(false);
-      alert(error.message);
+      alert('Please enter valid Username and Password ! ');
     }
   };
 
