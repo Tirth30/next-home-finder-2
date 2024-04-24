@@ -1,22 +1,8 @@
-// import React, { useState } from 'react';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { BsFillHouseHeartFill } from "react-icons/bs";
+import { Link, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
-<<<<<<< HEAD
-// const Contact = () => {
-//     const [formData, setFormData] = useState({
-//         name: '',
-//         phone: '',
-//         subject: '',
-//         message: ''
-//     })
-//     let  name, value
-//     console.log(user)
-//     const data = (e) =>
-//      {
-//         name = e.targer.name;
-//         value = e.tareget.value;
-//         setUserId({...user, [name]: value});
-//     }
-=======
 function ContactsAdd() {
   const location = useLocation();
   const products = [
@@ -275,160 +261,22 @@ function ContactsAdd() {
       try {
         const databaseUrl =
           "https://next-home-finder-5de1b-default-rtdb.firebaseio.com/contect.json";
->>>>>>> 57fe2ee9a37dcb76bd43663333b2707e55e754ed
 
-//     // const handleSubmit = async (e) => {
-//     //     e.preventDefault();
-//     //     const { name, phone, subject, message } = formData;
+        // Send PATCH request to update the entry wit the new ID
+        const data = await axios.get(databaseUrl);
+        setIds(data?.data);
 
-//     //     try {
-//     //         const res = await fetch('https://next-home-finder-5de1b-default-rtdb.firebaseio.com/your_endpoint.json', {
-//     //             method: 'POST',
-//     //             headers: {
-//     //                 'Content-Type': 'application/json'
-//     //             },
-//     //             body: JSON.stringify({
-//     //                 name,
-//     //                 phone,
-//     //                 subject,
-//     //                 message
-//     //             })
-//     //         });
-
-//     //         if (res.ok) {
-//     //             alert("Message sent successfully");
-//     //         } else {
-//     //             alert("Error occurred");
-//     //         }
-//     //     } catch (error) {
-//     //         console.error("Error:", error);
-//     //         alert("Error occurred");
-//     //     }
-//     // };
-
-//     return (
-//         <section className="contact">
-//             <div className="page-top">
-//                 <div className="container">
-//                     <div className="row">
-//                         <div className="col-lg-12">
-//                             <h1 className="page-title">Contact</h1>
-//                             <h2 className="page-description">Give us Your Valuable Feedback</h2>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//             <div className="page-content">
-//                 <div className="container">
-//                     <div className="row">
-//                         <div className="col-lg-12">
-//                             <div className="row">
-//                                 <div className="col-lg-6">
-//                                     <label>Name</label>
-//                                     <input type="text" className="inp-contact" name="name" value={formData.name} onChange={handleChange} />
-//                                 </div>
-//                                 <div className="col-lg-6">
-//                                     <label>Phone</label>
-//                                     <input type="text" className="inp-contact" name="phone" value={formData.phone} onChange={handleChange} />
-//                                 </div>
-//                                 <div className="col-lg-12">
-//                                     <label>Subject</label>
-//                                     <input type="text" className="inp-contact" name="subject" value={formData.subject} onChange={handleChange} />
-//                                 </div>
-//                                 <div className="col-lg-12">
-//                                     <label>Message</label>
-//                                     <textarea type="text" className="ta-contact" rows="4" name="message" value={formData.message} onChange={handleChange}></textarea>
-//                                 </div>
-//                                 <div className="col-lg-12">
-//                                     <button className="btn-contact" onClick={handleSubmit}>Send Feedback</button>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
-// export default Contact;
-
-
-
-
-
-
-
-import React, { useState } from 'react';
-
-const Contact = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
-        subject: '',
-        message: ''
-    });
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData(prevState => ({
-            ...prevState,
-            [name]: value
-        }));
-        console.log(formData); // Log formData whenever it changes
+        setFilteredProducts(
+          Object.keys(data?.data).map((key) => {
+            const productId = data?.data[key];
+            return products.find((product) => product.id === productId);
+          })
+        );
+      } catch (error) {
+        console.error("Error adding ID:", error);
+      }
     }
 
-<<<<<<< HEAD
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Here you can send the form data to Firebase or perform any other actions you need
-        console.log("Form submitted:", formData);
-    };
-
-    return (
-        <section className="contact">
-            <div className="page-top">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <h1 className="page-title">Contact</h1>
-                            <h2 className="page-description">Give us Your Valuable Feedback</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="page-content">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <label>Name</label>
-                                    <input type="text" className="inp-contact" name="name" value={formData.name} onChange={handleChange} />
-                                </div>
-                                <div className="col-lg-6">
-                                    <label>Phone</label>
-                                    <input type="text" className="inp-contact" name="phone" value={formData.phone} onChange={handleChange} />
-                                </div>
-                                <div className="col-lg-12">
-                                    <label>Subject</label>
-                                    <input type="text" className="inp-contact" name="subject" value={formData.subject} onChange={handleChange} />
-                                </div>
-                                <div className="col-lg-12">
-                                    <label>Message</label>
-                                    <textarea type="text" className="ta-contact" rows="4" name="message" value={formData.message} onChange={handleChange}></textarea>
-                                </div>
-                                <div className="col-lg-12">
-                                    <button className="btn-contact" onClick={handleSubmit}>Send Feedback</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-=======
     fetchMyAPI();
   }, []);
   console.log(filteredProducts);
@@ -461,11 +309,10 @@ const Contact = () => {
           <p>{product?.price}</p>
           <p>{product?.mobileNo}</p>
           <p>{product?.emaill}</p>
-          <Link to={`/Detail/${product?.id}`}>
+          <Link to={'/Detail/${product?.id}'}>
             {" "}
             {/* Pass the id as a parameter to the detail page route */}
             <button>View Details</button>
-            
           </Link>
           <BsFillHouseHeartFill
             className="like"
@@ -477,7 +324,6 @@ const Contact = () => {
       ))}
     </div>
   );
->>>>>>> 57fe2ee9a37dcb76bd43663333b2707e55e754ed
 }
 
-export default Contact;
+export default ContactsAdd;
