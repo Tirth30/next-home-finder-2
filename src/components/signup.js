@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 // import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -65,6 +66,12 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { createUserWithEmailAndPassword, getAuth, fetchSignInMethodsForEmail } from "firebase/auth";
+=======
+
+import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import { createUserWithEmailAndPassword } from "firebase/auth";
+>>>>>>> e06abd2309cfba902b7b237e08c0f5cede780573
 import { auth } from '../firebase.config';
 
 const SignupForm = () => {
@@ -73,9 +80,13 @@ const SignupForm = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [loading, setLoading] = useState(false);
+<<<<<<< HEAD
   const [error, setError] = useState('');
   const history = useHistory();
   const auth = getAuth();
+=======
+  const history = useHistory(); // Import useHistory hook
+>>>>>>> e06abd2309cfba902b7b237e08c0f5cede780573
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -101,12 +112,13 @@ const SignupForm = () => {
       // Register new user
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
-      console.log('Signup successful!', user);
+      alert('Signup successful!');
 
       setName('');
       setEmail('');
       setPassword('');
       setConfirmPassword('');
+<<<<<<< HEAD
 
       // Redirect to login page after successful signup
       history.push('/');
@@ -115,6 +127,15 @@ const SignupForm = () => {
       setError(error.message);
       // Show popup message for existing user
       alert(error.message);
+=======
+      
+      // Redirect to login page after successful signup
+      history.push("/"); // Redirect to your login page route
+    } catch (error) {
+      console.error('Signup error:', error.message);
+      // Display error message to user using alert
+      alert('Email Already in use ! ');
+>>>>>>> e06abd2309cfba902b7b237e08c0f5cede780573
     }
 
     setLoading(false);

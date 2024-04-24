@@ -326,4 +326,8 @@ function ContactsAdd() {
   );
 }
 
+<<<<<<< HEAD
 export default ContactsAdd;
+=======
+export default ContactsAdd;
+>>>>>>> e06abd2309cfba902b7b237e08c0f5cede780573
