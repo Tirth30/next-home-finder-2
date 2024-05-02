@@ -206,7 +206,6 @@
 
 
 
-
 import React, { useState } from 'react';
 
 const Contact = () => {
@@ -243,6 +242,12 @@ const Contact = () => {
         e.preventDefault();
         const { name, phone, subject, message } = formData;
         
+        // Check if any of the fields are empty
+        if (!name || !phone || !subject || !message) {
+            alert("All fields are required.");
+            return;
+        }
+
         // Check if phone number is exactly 10 digits
         if (phone.length !== 10) {
             alert("Phone number must be 10 digits long.");
@@ -290,20 +295,20 @@ const Contact = () => {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <label>Name</label>
-                                    <input type="text" className="inp-contact" name="name" value={formData.name} onChange={handleChange} />
+                                    <input type="text" className="inp-contact" name="name" value={formData.name} onChange={handleChange} required />
                                 </div>
                                 <div className="col-lg-6">
                                     <label>Phone</label>
-                                    <input type="text" className="inp-contact" name="phone" value={formData.phone} onChange={handleChange} />
+                                    <input type="text" className="inp-contact" name="phone" value={formData.phone} onChange={handleChange} required />
                                     {phoneError && <small style={{ color: 'red' }}>{phoneError}</small>}
                                 </div>
                                 <div className="col-lg-12">
                                     <label>Subject</label>
-                                    <input type="text" className="inp-contact" name="subject" value={formData.subject} onChange={handleChange} />
+                                    <input type="text" className="inp-contact" name="subject" value={formData.subject} onChange={handleChange} required />
                                 </div>
                                 <div className="col-lg-12">
                                     <label>Message</label>
-                                    <textarea type="text" className="ta-contact" rows="4" name="message" value={formData.message} onChange={handleChange}></textarea>
+                                    <textarea type="text" className="ta-contact" rows="4" name="message" value={formData.message} onChange={handleChange} required></textarea>
                                 </div>
                                 <div className="col-lg-12">
                                     <button className="btn-contact" onClick={handleSubmit}>Send Feedback</button>
@@ -318,4 +323,3 @@ const Contact = () => {
 }
 
 export default Contact;
-

@@ -309,12 +309,12 @@ function ContactsAdd() {
           <p>{product?.price}</p>
           <p>{product?.mobileNo}</p>
           <p>{product?.emaill}</p>
-          <Link to={'/Detail/${product?.id}'}>
-            {" "}
+          {/* <Link to={'/Detail/${product?.id}'}>
+            {" "} */}
             {/* Pass the id as a parameter to the detail page route */}
-            <button>View Details</button>
-          </Link>
-          <BsFillHouseHeartFill
+            {/* <button>View Details</button>
+          </Link> */}
+          <BsFillHouseHeartFill align="center"
             className="like"
             onClick={() => {
               alert("Liked Successfully");
