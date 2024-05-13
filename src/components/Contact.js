@@ -262,7 +262,7 @@ const Contact = () => {
             },
             body: JSON.stringify({ name, phone, subject, message })
         }
-        fetch('https://next-home-finder-5de1b-default-rtdb.firebaseio.com/userData.json', options)
+        fetch('https://next-home-finder-5de1b-default-rtdb.firebaseio.com/feedback.json', options)
             .then(response => {
                 if (response.ok) {
                     alert("Message sent");

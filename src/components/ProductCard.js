@@ -298,7 +298,7 @@ function ProductCards() {
   
   
   return (
-    <>
+    <><div className='filterr'>
       <div className="filter-container">
       <input type="number" value={inputValue} onChange={e => setInputValue(e.target.value)} placeholder="Max Price"/> 
         <select value={cityFilter} onChange={e => setCityFilter(e.target.value)}>
@@ -368,6 +368,7 @@ function ProductCards() {
         </div>
         <button onClick={handleApplyFilter}>Apply Filter</button>
         <button onClick={handleResetFilter}>Reset Filter</button>
+        </div>
       </div>
       <div className="product-cards">
         {filteredProducts.map((product, index) => (
@@ -379,7 +380,7 @@ function ProductCards() {
             price={product.price}
           />
         ))}
-      </div>
+      </div> 
     </>
   );
 }
