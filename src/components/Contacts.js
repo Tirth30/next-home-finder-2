@@ -314,12 +314,12 @@ function ContactsAdd() {
             {/* Pass the id as a parameter to the detail page route */}
             {/* <button>View Details</button>
           </Link> */}
-          <BsFillHouseHeartFill align="center"
+          {/* <BsFillHouseHeartFill align="center"
             className="like"
             onClick={() => {
               alert("Liked Successfully");
             }}
-          />
+          /> */}
         </div>
       ))}
     </div>

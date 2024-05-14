@@ -32,9 +32,9 @@ const Header = () => {
                                 <li className="nav-item">
                                     <Link  className="nav-link" to="/Contacts">Contacts</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link  className="nav-link" to="/Liked">Liked</Link>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link className="nav-link" to="#"> Category <i className="fas fa-chevron-down"></i></Link>
                                     <ul className="sub-ul">
